@@ -8,6 +8,7 @@ section{
     background: rgba(19, 186, 154, 1);
     position: relative;
     .num-svg{
+        margin-top: 1rem;
         width: 70%;
         height: 70%;
         background-image: url('../assets/aboutSvg.svg');
@@ -89,29 +90,3 @@ section{
         } 
     }   
 }
-
-
-/* media Querys */
-
-@media screen and(min-width: 1024px){
-    section{
-        display: flex;
-    }
-    .header{
-        width: 20%;
-        height: auto;
-        .num-svg{
-            width: 12rem;
-            height: 12rem;
-        }
-        h2{
-            transform: rotate(90deg);
-            width: 25rem;
-            left: -6rem;
-            font-size: 4.5rem;
-            
-        }
-    }
-} 
-
-/* **** */

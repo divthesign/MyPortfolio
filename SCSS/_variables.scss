@@ -1,0 +1,48 @@
+$lightTurquoise: rgba(8, 253, 216, 1);
+$strongPink: rgba(252, 8, 83, 1);
+$bckgGrey: rgb(37, 38, 39);
+$codeGrey: rgb(94, 94, 94);
+$navGrey: rgb(67, 68, 68);
+$cleanWhite: rgb(255, 255, 255);
+$lightBlue: rgb(41, 166, 183);
+$plainBlack: rgb(0, 0, 0);
+$bckgSobreMi: rgb(25, 204, 170);
+
+$title1: 'Montserrat';
+$title2: 'Damion';
+
+$abs: absolute;
+
+$textCenter: center;
+
+@mixin codeSimulation{
+    font-family: $title2;
+    font-size: 0.8rem;
+    color: $codeGrey;
+}
+@mixin btn{
+    margin-top: 1rem;
+    width: 8.5rem;
+    padding: 0.5rem 0;
+    background: $lightTurquoise;
+    border: none;
+    font-family: $title1;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    outline: inherit;
+    &:hover{
+        background: $cleanWhite;
+        color: $lightTurquoise; 
+    }
+}
+@mixin vCenter{
+    position: $abs;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin xCenter{
+    margin-left: auto;
+    margin-right: auto;
+}

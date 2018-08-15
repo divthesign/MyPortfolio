@@ -1,0 +1,555 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::before, ::after,
+:before, :after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::before, ::after,
+:before, :after {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #252627;
+  /* menu hidden*********** */
+  /* ********** */
+}
+header::before {
+  content: "<body>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: relative;
+  top: 3.5rem;
+  left: 3rem;
+}
+header::after {
+  content: "</body>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: absolute;
+  bottom: 15%;
+  left: 3rem;
+}
+header .menu_ham {
+  float: right;
+  padding-right: 1rem;
+  position: relative;
+  z-index: 30;
+}
+header .menu_ham button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}
+header .fas {
+  font-size: 3rem;
+  color: #fc0853;
+}
+header .menu {
+  display: none;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+  background: #434444;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  padding-left: 1rem;
+  padding-top: 5.5rem;
+}
+header li {
+  padding-top: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+header a:hover {
+  color: white;
+}
+header .text_menu {
+  margin-top: 4rem;
+}
+header .text_menu p {
+  font-family: "Montserrat";
+  font-weight: 100;
+  width: 90%;
+  font-size: 0.9rem;
+  color: #08fdd8;
+}
+header .text_menu button {
+  margin-top: 1rem;
+  width: 8.5rem;
+  padding: 0.5rem 0;
+  background: #08fdd8;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: inherit;
+}
+header .text_menu button:hover {
+  background: white;
+  color: #08fdd8;
+}
+header .titulo {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .logo_externo {
+  width: 5.5rem;
+  height: 5.5rem;
+  background: linear-gradient(to right, #fc0853, #08fdd8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .logo_externo::before {
+  content: "<div>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: absolute;
+  top: -0.5rem;
+  left: -2.5rem;
+}
+header .logo_externo::after {
+  content: "</div>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 105%;
+}
+header .logo_externo .logo_interno {
+  width: 97%;
+  height: 97%;
+  background: linear-gradient(to right, #fc0853, #252627);
+  position: relative;
+  top: 1.5%;
+  left: 1.5%;
+}
+header h1 {
+  color: white;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3.8rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+header span {
+  font-family: "Damion";
+  text-transform: capitalize;
+}
+header .sub_heading {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: lighter;
+  font-size: 0.8rem;
+  color: white;
+  position: absolute;
+  top: 155%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.header {
+  width: 100%;
+  height: 20vh;
+  background: #13ba9a;
+  position: relative;
+}
+.header .num-svg {
+  width: 70%;
+  height: 70%;
+  background-image: url("../assets/aboutSvg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.header h2 {
+  width: 100%;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  background: #19ccaa;
+  position: relative;
+  top: 0;
+}
+.content .image_about {
+  width: 98%;
+  position: relative;
+  left: 1%;
+}
+.content img {
+  width: 100%;
+}
+.content .text_about {
+  padding: 1rem;
+}
+.content p {
+  margin-top: 2rem;
+  padding: 0 0.5rem 0 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  font-weight: 100;
+  line-height: 1.7;
+}
+.content p::first-line {
+  line-height: 1;
+}
+.content span {
+  color: #fc0853;
+  font-weight: 300;
+}
+.content .hola {
+  font-size: 2rem;
+  font-weight: 500;
+  color: currentColor;
+}
+.content .text_cv {
+  text-align: center;
+}
+.content .btn_cv {
+  text-align: center;
+}
+.content button {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  width: 8.5rem;
+  padding: 0.5rem 0;
+  background: white;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: inherit;
+  cursor: pointer;
+}
+.content button:hover {
+  background: none;
+  border: 2px solid white;
+  color: white;
+}
+
+/* media Querys */
+@media screen and (min-width: 1024px) {
+  section {
+    display: flex;
+  }
+
+  .header {
+    width: 20%;
+    height: auto;
+  }
+  .header .num-svg {
+    width: 12rem;
+    height: 12rem;
+  }
+  .header h2 {
+    transform: rotate(90deg);
+    width: 25rem;
+    left: -6rem;
+    font-size: 4.5rem;
+  }
+}
+/* **** */
+.port {
+  width: 100%;
+  height: auto;
+}
+.port .header {
+  background: #25959e;
+}
+.port .header .num-svg {
+  background-image: url("../assets/portfolioSvg.svg");
+}
+.port .content {
+  background: #29a6b7;
+}
+.port .container_port {
+  width: 98%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+.port .container_port:hover .marco {
+  bottom: 0%;
+}
+.port .container_port .titulo_container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.port .container_port h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.port .container_port p {
+  color: black;
+  margin-top: 0.5em;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.port .container_port .marco {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: -50%;
+  transition: all 0.2s ease;
+}
+.port .container_port .marco_hover {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0;
+}
+.port .container_port .container_tit_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.port .container_port .work {
+  /* padding-top: 4rem;  a parti de la mQ 1*/
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 1000;
+}
+.port .container_port .work p {
+  color: #19ccaa;
+  opacity: 1;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.port .container_port .btn {
+  text-align: center;
+}
+.port .container_port button {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  width: 8.5rem;
+  padding: 0.5rem 0;
+  background: #19ccaa;
+  color: white;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: inherit;
+  position: relative;
+  z-index: 1000;
+}
+.port .container_port button:hover {
+  background: white;
+  color: #19ccaa;
+}
+.port .ver_mas {
+  background: #252627;
+  text-align: center;
+}
+.port .ver_mas .btn_mas {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Montserrat";
+  background: transparent;
+  margin-top: 0;
+  transition: all 0.2s linear;
+}
+.port .ver_mas .btn_mas:hover {
+  transform: rotateZ(90deg);
+  background: none;
+}
+
+.skills {
+  width: 100%;
+  height: auto;
+}
+.skills .header {
+  background: #9dd5da;
+}
+.skills .header .num-svg {
+  background-image: url("../assets/habilidadesSvg.svg");
+}
+footer {
+  background-color: #252627;
+  padding: 3rem 0 0 0;
+}
+footer p {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  padding: 1rem 0 1rem 1rem;
+  font-weight: 200;
+}
+footer .git {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+footer a:hover {
+  text-shadow: 110px 1px 2px white, -110px 1px 2px white, 1px 1px 40px white;
+  color: #fc0853;
+}
+
+/*# sourceMappingURL=css/styles.css.map */

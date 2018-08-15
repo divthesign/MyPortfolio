@@ -1,0 +1,117 @@
+section{
+    width: 100%;
+    /* height: 100vh; */
+}
+.header{
+    width: 100%;
+    height: 20vh;
+    background: rgba(19, 186, 154, 1);
+    position: relative;
+    .num-svg{
+        width: 70%;
+        height: 70%;
+        background-image: url('../assets/aboutSvg.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+    }
+    h2{
+        width: 100%;
+        font-family: $title1;
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: $cleanWhite;
+        text-transform: uppercase;
+        @include vCenter;
+        text-align: center;
+    }
+} 
+.content{
+    width: 100%;
+    background: rgba(25, 204, 170, 1);
+    position: relative;
+    top: 0;
+    .image_about{
+        width: 98%;
+        position: relative;
+        left: 1%;
+    }
+    img{
+        width: 100%;
+    }
+    .text_about{
+        padding: 1rem;
+    }
+    p{
+        margin-top: 2rem;
+        padding: 0 0.5rem 0 0.5rem;
+        color: $cleanWhite;
+        font-size: 1.1rem;
+        font-family: 'Roboto';
+        font-weight: 100;
+        line-height: 1.7;
+        &::first-line{
+            line-height: 1;
+        }
+    }
+    span{
+        color: $strongPink;
+        font-weight: 300;
+    } 
+    .hola{
+        font-size: 2rem;
+        font-weight: 500;
+        color: currentColor;
+    }
+    .text_cv{
+        text-align: $textCenter;
+    }
+    .btn_cv{
+        text-align: $textCenter;
+    }
+    button{
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        width: 8.5rem;
+        padding: 0.5rem 0;
+        background: $cleanWhite;
+        border: none;
+        font-family: $title1;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: uppercase;
+        outline: inherit;
+        cursor: pointer;
+        &:hover{
+            background: none;
+            border: 2px solid $cleanWhite;
+            color: $cleanWhite; 
+        } 
+    }   
+}
+
+
+/* media Querys */
+
+@media screen and(min-width: 1024px){
+    section{
+        display: flex;
+    }
+    .header{
+        width: 20%;
+        height: auto;
+        .num-svg{
+            width: 12rem;
+            height: 12rem;
+        }
+        h2{
+            transform: rotate(90deg);
+            width: 25rem;
+            left: -6rem;
+            font-size: 4.5rem;
+            
+        }
+    }
+} 
+
+/* **** */

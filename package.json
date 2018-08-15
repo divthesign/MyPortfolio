@@ -1,0 +1,24 @@
+{
+  "name": "MyPortfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start":"parallelshell \"npm run server\" \"npm run watch\"",
+    "watch":"nodemon -e scss -x \"sass scss:css\"",
+    "server":"http-server",
+    "sass":"sass scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divthesign/MyPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divthesign/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/divthesign/MyPortfolio#readme"
+}

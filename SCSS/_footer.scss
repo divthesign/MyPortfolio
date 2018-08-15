@@ -1,0 +1,31 @@
+footer{
+    background-color: $bckgGrey;
+    padding: 3rem 0 0 0;
+    p{
+        color: $cleanWhite;
+        font-family: $title1;
+        font-size: 0.8rem;
+        padding: 1rem 0 1rem 1rem;
+        font-weight: 200;
+    }
+    .git{
+        text-align: $textCenter;
+        padding: 1rem 0 2rem 0;
+    }
+    a{
+        color: $cleanWhite; 
+        text-decoration: none;
+        font-family: $title1;
+        font-weight: 400;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        transition: all .3s ease-in;
+        &:hover{
+            text-shadow: 110px 1px 2px $cleanWhite,
+                        -110px 1px 2px $cleanWhite, 
+                         1px 1px 40px $cleanWhite;
+            color: $strongPink; 
+        }
+                      
+    } 
+}

@@ -1,0 +1,117 @@
+.port{
+    width: 100%;
+    height: auto;
+    .header{
+        background: #25959e;
+        .num-svg{
+            background-image: url('../assets/portfolioSvg.svg')
+        }
+    }
+    .content{
+        background: #29a6b7;
+    }
+    .container_port{
+        width: 98%;
+        height: auto;
+        @include xCenter;
+        margin-top: 0;
+        position: relative;
+        overflow: hidden;
+        &:hover .marco{
+            bottom: 0%;
+        }
+        .titulo_container{
+            position: $abs;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: $textCenter;
+        }
+        h3{
+            font-family: $title1;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        p{
+            color: $plainBlack;
+            margin-top: 0.5em;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .marco{
+            width: 100%;
+            height: 50%;
+            position: $abs;
+            bottom: -50%;
+            transition: all 0.2s ease;
+        }
+        .marco_hover{
+            width: 100%;
+            height: 100%;
+            background: $plainBlack;
+            opacity: 0.1;
+            position: $abs;
+            bottom: 0;
+        }
+        .container_tit_btn{
+            @include vCenter;
+        }
+        .work{
+            /* padding-top: 4rem;  a parti de la mQ 1*/
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            z-index: 1000;
+            p{
+                color: $bckgSobreMi;
+                opacity: 1;
+                font-family: $title1;
+                font-weight: 800;
+                font-size: .8rem;
+                text-transform: uppercase;
+            }
+        }
+        .btn{
+            text-align: $textCenter;
+        }
+        button{
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            width: 8.5rem;
+            padding: 0.5rem 0;
+            background: $bckgSobreMi;
+            color: $cleanWhite;
+            border: none;
+            font-family: $title1;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            outline: inherit;
+            position: relative;
+            z-index: 1000;
+            &:hover{
+                background: $cleanWhite;
+                color: $bckgSobreMi; 
+            } 
+        }
+    }
+    .ver_mas{
+        background: $bckgGrey;
+        text-align: $textCenter;
+        .btn_mas{
+            color: $cleanWhite;
+            font-size: 3rem;
+            font-weight: 400;
+            font-family: $title1;
+            background: transparent;
+            margin-top: 0;
+            transition: all 0.2s linear;
+            &:hover{
+                transform: rotateZ(90deg);
+                background: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+@import 'reset.scss';
+@import '_variables.scss';
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: $bckgGrey;
+    &::before{
+        content: '<body>';
+        @include codeSimulation; 
+        position: relative;
+        top: 3.5rem;
+        left: 3rem;
+    }
+    &::after{
+        content: '</body>';
+        @include codeSimulation; 
+        position: $abs;
+        bottom: 15%;
+        left: 3rem;
+    }
+    .menu_ham{
+        float: right;
+        padding-right: 1rem;
+        position: relative;
+        z-index: 30;
+        button{
+            background: none;
+            border: none;
+            cursor: pointer;
+            outline: inherit;
+        }        
+    }
+    .fas{
+        font-size: 3rem;
+        color: $strongPink;
+    }
+    /* menu hidden*********** */
+    .menu{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        height: 100%;
+        background: $navGrey;
+        position: $abs;
+        top: 0;
+        z-index: 20;
+        padding-left: 1rem;
+        padding-top: 5.5rem;
+    }
+    li{
+        padding-top: 2rem ;
+    }
+    a{
+        text-decoration: none;
+        color: $plainBlack;
+        font-family: $title1;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 2rem;
+        &:hover{
+            color: $cleanWhite;
+        }
+    }
+    .text_menu{
+        margin-top: 4rem;
+        p{
+            font-family: $title1;
+            font-weight: 100;
+            width: 90%;
+            font-size: 0.9rem;
+            color: $lightTurquoise;
+        }
+        button{
+            @include btn; 
+        }
+    }
+    /* ********** */
+    .titulo{
+        width: 95%;
+        @include vCenter;
+    }
+    .logo_externo{
+        width: 5.5rem;
+        height: 5.5rem;
+        background: linear-gradient(to right, $strongPink, $lightTurquoise); 
+        @include vCenter;
+        &::before{
+            content: '<div>';
+            @include codeSimulation; 
+            position: $abs;
+            top: -0.5rem;
+            left: -2.5rem;
+        }
+        &::after{
+            content: '</div>';
+            @include codeSimulation; 
+            position: $abs;
+            bottom: -0.5rem;
+            left: 105%;
+        }
+        .logo_interno{
+            width: 97%;
+            height: 97%;
+            background: linear-gradient(to right, $strongPink, $bckgGrey); 
+            position: relative;
+            top: 1.5%;
+            left: 1.5%;
+        } 
+    }
+    h1{
+        color: $cleanWhite;
+        font-family: $title1;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 3.8rem;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+    span{
+        font-family: $title2;
+        text-transform: capitalize;        
+    }
+    .sub_heading{
+        text-align: center;
+        font-family: $title1;
+        font-weight: lighter;
+        font-size: 0.8rem;
+        color: $cleanWhite;
+        position: $abs;
+        top: 155%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

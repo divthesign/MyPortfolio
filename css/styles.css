@@ -589,11 +589,11 @@ section {
   height: auto;
 }
 .skills .header {
-  background-color: white;
+  background-color: #19ccaa;
   position: relative;
 }
 .skills .header .num-svg {
-  background-image: url("../assets/habilidadesSvg.svg");
+  background-image: url("../assets/skillsBlancoSvg.svg");
 }
 .skills .header h2 {
   color: black;
@@ -609,7 +609,7 @@ section {
   } */
 }
 .skills .content {
-  background: #dbdbdb;
+  background: white;
   padding-top: 3rem;
 }
 .skills .content .lista_skills {

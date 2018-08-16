@@ -1,10 +1,10 @@
 .skills{
     height: auto;
     .header{
-        background-color: $cleanWhite;
+        background-color: $bckgSobreMi;
         position: relative;
         .num-svg{
-            background-image: url('../assets/habilidadesSvg.svg')
+            background-image: url('../assets/skillsBlancoSvg.svg');
         }
         h2{
           color: $plainBlack;
@@ -21,7 +21,7 @@
         }
     }
     .content{
-        background: #dbdbdb;
+        background: $cleanWhite;
         padding-top: 3rem;
         .lista_skills{
             width: 90%;

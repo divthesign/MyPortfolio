@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-        <header>
+        <header id="inicio">
                 <div class="nav">
                     <div class="menu_ham">
                         <button type="button">
@@ -62,30 +62,45 @@
                 <img src="./assets/fotoAboutGradients.jpg" alt="Daniel Verdú disfrutando de la Puesta de Sol en el mar">
             </div>
             <div class="text_about">
-                <p>
-                    <span class="hola">¡Hola! </span>Me llamo
-                    <span>Daniel Verdú Martínez</span> , soy
-                    <span>desarrollador y maquetador front-end</span> , aunque también realizo trabajos de diseño gráfico, maquetación de libros,
-                    ilustraciones y collages. También soy piloto profesional de drones , lo cual me ha permitido desarrollarme en el
-                    campo de la edición vídeo y la fotografía. No tuve la opotunidad de ir a la universidad, pero eso no ha sido un inconveniente
-                    para mi a la hora de aprender a utilizar programas como: illustrator, photoshop, premiere pro, after effects o indesign.
-                </p>
-                <p>
-                    <span>Mi pasión</span> es la
-                    <span>programación</span>, el
-                    <span>diseño</span> en general y las
-                    <span>nuevas tecnologías
-                    </span>. Soy una persona a la que le gustaestar constantemente aprendiendo, me desenvuelvo perfectamente ante nuevos
-                    retos y
-                    <span>poseo unas dotes creativas muy altas.</span>
-                </p>
-                <p class="text_cv">Puedes conocer más sobre mi y sobre mi perfil profesional      pinchando aquí.
-                </p>
-                <div class="btn_cv">
-                    <a href="./assets/Daniel Verdú-Cv_ InDesign_ 2018.pdf">
-                        <button type="button">Cv</button>
-                    </a>
+                <div class="container-about">
+                    <div class="box box-1">
+                        <h3><strong>Hola</strong></h3>
+                        <p>Me llamo Daniel Verdú Martínez y soy desarrollador 
+                           y maquetador front-end. Me apasiona el diseño 
+                           web y me encanta crear para web y dispositivos moviles.
+                        </p>
+                    </div>
+                    <div class="box box-2">
+                        <div class="circles uno"></div>
+                        <h3><strong>Diseño lo que quieres</strong></h3>
+                        <p>	Me gusta lo sencillo, atractivo y con un mensaje claro. 
+                            Mi puntos fuertes son la creatividad y el diseño.
+                        </p>
+                    </div>
+                    <div class="box box-3">
+                        <div class="circles dos"></div>
+                        <h3><strong>Desarrollo lo que necesitas</strong></h3>
+                        <p>Utilizo las  ultimas tecnologías para 
+                            trabajar, desarrollar mis proyectos 
+                            y adaptarlos a todos los tipos de dispositivos.
+                        </p>
+                    </div>
                 </div>
+                <div class="container-contacto">
+                    <div class="content">
+                        <p class="text_cv">Conoce más sobre mi y  mi experiencia profesional.
+                        </p>
+                        <div class="btn_cv">
+                            <a href="./assets/Daniel Verdú-Cv_ InDesign_ 2018.pdf">
+                                <button type="button">Cv</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="datos-contacto">
+                        <a href="mailto:#verdudaniel7@gmail.com">verdudaniel7@gmail.com</a>
+                        <p>+34 640 730 963</p>
+                    </div>
             </div>
         </div>
     </section> 
@@ -279,7 +294,7 @@
         </div>
         <div class="content">
             <div class="lista_skills">
-                <ul>
+                <ul class="code">
                     <li>html</li>
                     <li>css</li>
                     <li>Microdata</li>
@@ -298,6 +313,16 @@
                     <li>wordpress</li>
                 </ul>
             </div>
+            <div class="lista_skills software">
+                <h4>Software Gráfico</h4>
+                <ul class="software-list">
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>Premeire Pro</li>
+                    <li>After Effects</li>
+                    <li>Indesign</li>
+                </ul>
+            </div>
         </div>
     </section>
 </main>
@@ -306,7 +331,7 @@
             <a href="https://github.com/divthesign" target="blank">Github</a>
         </div>
         <p>
-            <small>Daniel Verdú &copy; 2018</small>
+            <small>&copy; 2018 <a href="#inicio">Div Thesign</a> All rights reserved.</small>
         </p>
     </footer>    
 </body>

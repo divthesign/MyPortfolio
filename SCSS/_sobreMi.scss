@@ -1,11 +1,11 @@
 section{
     width: 100%;
-    /* height: 100vh; */
+    height: auto;
 }
 .header{
     width: 100%;
     height: 20vh;
-    background: rgba(19, 186, 154, 1);
+    background: rgba(25, 204, 170, 0.95);
     position: relative;
     .num-svg{
         margin-top: 1rem;
@@ -29,22 +29,98 @@ section{
 } 
 .content{
     width: 100%;
-    background: rgba(25, 204, 170, 1);
+    background: rgba(25, 204, 170, 0.95);
     position: relative;
     top: 0;
+    padding-bottom: 3rem;
     .image_about{
         width: 98%;
         position: relative;
         left: 1%;
+        z-index: -10;
+        img{
+            width: 150%;
+            position: absolute;
+            top: 4rem;
+            right: 0;
+    
+        }
     }
-    img{
-        width: 100%;
+    .container-about{
+        padding-top: 4rem;
+        width: 90%;
+        max-width: 30rem;
+        @include xCenter;
     }
-    .text_about{
-        padding: 1rem;
+    .box{
+        width: 90%;
+        @include xCenter;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .circles{
+        width: 7rem;
+        height: 7rem;
+        background: #d1d1d1;
+        border-radius: 50%;
+        @include xCenter;
+        margin-bottom: 2rem;
+    }
+    .dos{
+        background-image: url('../assets/dispositivosSvg.svg');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: top;
+        position: relative;
+        animation: dispositivos 15s ease-in-out infinite;
+        &::after{
+            content: '';
+            width: 1%;
+            height: 30%;
+            background: #d1d1d1;
+            position: absolute;
+            top: 100%;
+        }
+        @keyframes dispositivos{
+            0%{
+                background-position: top;
+                background-size: 70%;
+            }
+            23%{
+                background-position: top;
+                background-size: 70%;
+            }
+            24%{
+                background-size: 0%;
+            }
+            26%{
+                background-position: center;
+                background-size: 80%;
+            }
+            27%{
+                background-size: 70%;
+            }
+            50%{
+                background-position: center;
+            }
+            75%{
+                background-position: center;
+            }
+            77%{
+                background-position: bottom;
+            }
+            100%{
+                background-position: bottom;
+            }
+        }
+    }
+    h3{
+        font-family: $title1;
+        font-weight: lighter;
+        font-size: 1.5rem;
     }
     p{
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding: 0 0.5rem 0 0.5rem;
         color: $cleanWhite;
         font-size: 1.1rem;
@@ -55,20 +131,21 @@ section{
             line-height: 1;
         }
     }
-    span{
-        color: $strongPink;
-        font-weight: 300;
-    } 
-    .hola{
-        font-size: 2rem;
-        font-weight: 500;
-        color: currentColor;
+    .container-contacto{
+        width: 90%;
+        max-width: 30rem;
+        @include xCenter;
+        position: relative;
+        padding: 1rem 0 2rem 0;
+        border: 1px solid $cleanWhite;
     }
     .text_cv{
         text-align: $textCenter;
     }
     .btn_cv{
         text-align: $textCenter;
+        @include vCenter;
+        top: 6rem;
     }
     button{
         margin-top: 1.5rem;
@@ -88,5 +165,14 @@ section{
             border: 2px solid $cleanWhite;
             color: $cleanWhite; 
         } 
+    }
+    .datos-contacto{
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        a{
+            color: $cleanWhite;
+            font-family: $title1;
+        }
     }   
 }

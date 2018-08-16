@@ -638,7 +638,7 @@ section {
   color: #5e5e5e;
   text-transform: lowercase;
   position: absolute;
-  left: -1rem;
+  left: 6.5rem;
   bottom: 1rem;
 }
 .skills .content li {
@@ -659,6 +659,42 @@ section {
   left: 10%;
   margin-left: 8.5rem;
   box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(1)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(2)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(3)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(4)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(6)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(7)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(8)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(9)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+.skills .content li:nth-child(10)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(12)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+.skills .content li:nth-child(13)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(14)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
 }
 .skills .software h4 {
   width: 70%;
@@ -681,6 +717,21 @@ section {
 }
 .skills .software .software-list {
   margin-top: 3.5rem;
+}
+.skills .software .software-list li:nth-child(1)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .software .software-list li:nth-child(2)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .software .software-list li:nth-child(3)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .software .software-list li:nth-child(4)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+.skills .software .software-list li:nth-child(5)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
 }
 
 footer {

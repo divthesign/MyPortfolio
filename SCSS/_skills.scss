@@ -43,7 +43,7 @@
                 @include codeSimulation;
                 text-transform: lowercase;
                 position: absolute;
-                left: -1rem;
+                left: 6.5rem;
                 bottom: 1rem; 
             }
         }
@@ -68,6 +68,78 @@
                             75px 0 $navGrey,
                             100px 0 $navGrey;
             }
+            &:nth-child(1)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            }
+            &:nth-child(2)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            }
+            &:nth-child(3)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $navGrey,
+                            100px 0 $navGrey;
+            }
+            &:nth-child(4)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            }
+            &:nth-child(6)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $navGrey,
+                            100px 0 $navGrey;
+            }
+            &:nth-child(7)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $navGrey,
+                            100px 0 $navGrey;
+            }
+            &:nth-child(8)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $navGrey,
+                            75px 0 $navGrey,
+                            100px 0 $navGrey;
+            }
+            &:nth-child(9)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $navGrey;
+            }
+            &:nth-child(10)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            } 
+            &:nth-child(12)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $navGrey;
+            }
+            &:nth-child(13)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            }
+            &:nth-child(14)::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            }                           
         }
     }
     .software{
@@ -92,6 +164,38 @@
         }
         .software-list{
             margin-top: 3.5rem;
+            li{
+                &:nth-child(1)::after{
+                    box-shadow: 25px 0 $strongPink,
+                                50px 0 $strongPink,
+                                75px 0 $strongPink,
+                                100px 0 $strongPink;
+                }
+                &:nth-child(2)::after{
+                    box-shadow: 25px 0 $strongPink,
+                                50px 0 $strongPink,
+                                75px 0 $navGrey,
+                                100px 0 $navGrey;
+                }
+                &:nth-child(3)::after{
+                    box-shadow: 25px 0 $strongPink,
+                                50px 0 $strongPink,
+                                75px 0 $strongPink,
+                                100px 0 $strongPink;
+                }
+                &:nth-child(4)::after{
+                    box-shadow: 25px 0 $strongPink,
+                                50px 0 $strongPink,
+                                75px 0 $strongPink,
+                                100px 0 $navGrey;
+                }
+                &:nth-child(5)::after{
+                    box-shadow: 25px 0 $strongPink,
+                                50px 0 $strongPink,
+                                75px 0 $strongPink,
+                                100px 0 $navGrey;
+                }                    
+            }
         }
         
     }

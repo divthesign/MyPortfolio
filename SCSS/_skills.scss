@@ -8,16 +8,6 @@
         }
         h2{
           color: $plainBlack;
-         /*  &::after{
-            content:"";
-            position: $abs;
-            left: 70%;
-            top: 3.5rem;
-            background-image: url('../assets/afterSvg.svg');
-            background-repeat: no-repeat;
-            width: 3.5rem;
-            height: 3.5rem;
-        } */
         }
     }
     .content{
@@ -161,6 +151,16 @@
                 top: 110%;
                 background-color: $strongPink;
             }
+            &::before{
+            content:"";
+            position: $abs;
+            left: 110%;
+            top: 1rem;
+            background-image: url('../assets/afterSvg.svg');
+            background-repeat: no-repeat;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
         }
         .software-list{
             margin-top: 3.5rem;

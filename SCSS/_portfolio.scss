@@ -2,13 +2,13 @@
     width: 100%;
     height: auto;
     .header{
-        background: #25959e;
+        background: $lightBlue;
         .num-svg{
             background-image: url('../assets/portfolioSvg.svg')
         }
     }
     .content{
-        background: #29a6b7;
+        background: $lightBlue;
     }
     .container_port{
         width: 98%;

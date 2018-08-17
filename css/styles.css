@@ -468,7 +468,7 @@ section {
   height: auto;
 }
 .port .header {
-  background: #25959e;
+  background: #29a6b7;
 }
 .port .header .num-svg {
   background-image: url("../assets/portfolioSvg.svg");
@@ -597,16 +597,6 @@ section {
 }
 .skills .header h2 {
   color: black;
-  /*  &::after{
-      content:"";
-      position: $abs;
-      left: 70%;
-      top: 3.5rem;
-      background-image: url('../assets/afterSvg.svg');
-      background-repeat: no-repeat;
-      width: 3.5rem;
-      height: 3.5rem;
-  } */
 }
 .skills .content {
   background: white;
@@ -715,6 +705,16 @@ section {
   top: 110%;
   background-color: #fc0853;
 }
+.skills .software h4::before {
+  content: "";
+  position: absolute;
+  left: 110%;
+  top: 1rem;
+  background-image: url("../assets/afterSvg.svg");
+  background-repeat: no-repeat;
+  width: 3.5rem;
+  height: 3.5rem;
+}
 .skills .software .software-list {
   margin-top: 3.5rem;
 }
@@ -767,6 +767,81 @@ footer p a {
   color: white;
 }
 
+/*@function logosTamaño($width, $height){
+    $width: 8.5rem;
+    $height: 8.5rem;
+    $resultado: $width, $height;
+    @return $resultado
+}*/
+@media screen and (min-width: 522px) {
+  header .fas {
+    font-size: 4rem;
+  }
+  header .logo_externo {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+  header h1 {
+    font-size: 5.8rem;
+  }
+}
+@media screen and (min-width: 671px) {
+  header .logo_externo {
+    width: 10.2rem;
+    height: 10.2rem;
+  }
+  header h1 {
+    font-size: 7rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  header .menu_ham {
+    display: none;
+  }
+  header .menu {
+    display: block;
+    padding-top: 0;
+  }
+  header nav {
+    background: none;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header a {
+    font-weight: 600;
+    color: white;
+    font-size: 1.2rem;
+  }
+  header a:hover {
+    color: #08fdd8;
+  }
+  header .text_menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 832px) {
+  header .logo_externo {
+    width: 13.3rem;
+    height: 13.3rem;
+  }
+  header h1 {
+    font-size: 9rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header .logo_externo {
+    width: 17.8rem;
+    height: 17.8rem;
+  }
+  header h1 {
+    font-size: 12rem;
+  }
+  header a {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   section {
     display: flex;
@@ -775,6 +850,7 @@ footer p a {
   .header {
     width: 20%;
     height: auto;
+    background-color: #25959e;
   }
   .header .num-svg {
     width: 12rem;
@@ -785,207 +861,24 @@ footer p a {
     width: 25rem;
     left: -6rem;
     font-size: 4.5rem;
+    top: 30rem;
   }
-}
-/* @function logosTamaño($width, $height){
-    $width: 8.5rem;
-    $height: 8.5rem;
-    $resultado: $width, $height;
-    @return $resultado
-} */
-/* @mixin tamanoTitulo($tamanoLetra){
-    font-size: $tamanoLetra; 
-}
-@mixin logosTamanoUno($ancho, $alto){
-    width: $ancho;
-    height: $alto;
-}
-@mixin fontSize($fontSize){
-    font-size: $fontSize
-}
 
-@media screen and (min-width: 522px){
-    header{
-        .fas{
-            font-size: 4rem;
-        }
-        .logo_externo{
-            @include logosTamanoUno(8.5rem, 8.5rem )
-        }
-        h1{
-            font-size: 5.8rem;
-        }
-    }
-    .port{  
-        .container_port{
-            .work{
-                p{
-                    @include fontSize(1.2rem)
-                }
-            }
-        }
-    }
-}
+  .port .header {
+    background: #155e68;
+  }
+  .port h2 {
+    top: 30rem;
+    /* top: 10%; */
+  }
 
-@media screen and (min-width: 671px){
-    header{
-        .logo_externo{
-            @include logosTamanoUno(10.2rem,10.2rem)
-        }
-        h1{
-            @include tamanoTitulo(7rem)
-        }
-    }
-    section{
-        .sub_title{
-            @include fontSize(4rem);
-        }
-        p{
-            padding: 0 1rem 0 1rem;
-            @include fontSize(1.2rem)
-        }
-    }
-    .port{  
-        .container_port{
-            h3{
-                @include fontSize(2rem);
-            }
-            p{
-                @include fontSize(1.5rem);
-            }
-            .work{
-                p{
-                    @include fontSize(1.2rem)
-                }
-            }
-        }
-    }
-    .hab{
-        .sub_title{
-            &::after{
-                top: 5rem;
-            }
-        }
-    }
+  /* .skills{
+      .header{
+          h2{
+              top: 0;
+          }       
+  } */
 }
-
-@media screen and (min-width: 769px){
-    header{
-        .menu_ham{
-            display: none;
-        }
-        .menu{
-            display: block;
-            padding-top: 0;
-        }
-        nav{
-            background: none;
-        }
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        a{
-            font-weight: 600;
-            color: $cleanWhite;
-            &:hover{
-                color: $lightTurquoise;
-            }
-            @include fontSize(1.2rem) 
-        }
-        .text_menu{
-            display: none;
-        }
-    }
-    
-}
-
-@media screen and (min-width: 832px){
-    header{        
-        .logo_externo{
-            @include logosTamanoUno(13.3rem,13.3rem)
-        }
-        h1{
-            @include tamanoTitulo(9rem)
-        }
-    }
-    section{
-        p{
-            @include fontSize(1.5rem);
-        }
-    }
-    .port{  
-        .container_port{
-            h3{
-                @include fontSize(2.5rem);
-            }
-            p{
-                @include fontSize(2rem);
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1000px){
-    header{
-        .logo_externo{
-            @include logosTamanoUno(17.8rem,17.8rem)
-        }
-        h1{
-            @include tamanoTitulo(12rem)
-        }
-        a{
-            @include fontSize(1.6rem)
-        }
-    }
-    .about{
-        display: flex;
-        .titulo{
-            width: 10rem;
-            height: auto;
-            background: rgb(19, 186, 154);
-            position: relative;
-        }
-        .svg{
-            width: 10rem;
-            display: block;
-            position: absolute;
-            img{
-                width: 100%;
-            }
-        }
-        .flex-title{
-            width: 20rem;
-            max-width: 20rem;
-        }
-        h2{
-            width: 25rem;
-            display: block;
-            transform: rotate(90deg);
-            font-size: 4rem; 
-            position: absolute;
-            top: 32rem; 
-            left: -8rem;               
-        }
-        h2{
-            
-            
-        }
-        .content{
-            width: auto;
-        }
-    }
-    .port{
-        display: flex;
-        .titulo{
-            width: 20%;
-        }
-        .flex-content{
-            width: 80%;
-        }
-    }
-}
- */
-/*min: 543 */
+/* min: 523 */
 
 /*# sourceMappingURL=css/styles.css.map */

@@ -348,6 +348,21 @@ section {
   margin-right: auto;
   margin-bottom: 2rem;
 }
+.content .uno {
+  background-image: url("../assets/MonsterSvg.svg");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+.content .uno::after {
+  content: "";
+  width: 1%;
+  height: 30%;
+  background: #d1d1d1;
+  position: absolute;
+  top: 100%;
+}
 .content .dos {
   background-image: url("../assets/dispositivosSvg.svg");
   background-size: 70%;

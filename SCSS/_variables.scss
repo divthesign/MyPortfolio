@@ -7,13 +7,13 @@ $cleanWhite: rgb(255, 255, 255);
 $lightBlue: rgb(41, 166, 183);
 $plainBlack: rgb(0, 0, 0);
 $bckgSobreMi: rgb(25, 204, 170);
-$sobreMiBigHeader: rgba(37, 149, 158, 1);
-$portBigHeader: rgb(21, 94, 104);
+$sobreMiBigHeader: rgba(19, 186, 154, 1);
+$portBigHeader: rgba(37, 149, 158, 1);
+
 $title1: 'Montserrat';
 $title2: 'Damion';
 
 $abs: absolute;
-
 $textCenter: center;
 
 @mixin codeSimulation{

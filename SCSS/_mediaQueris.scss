@@ -63,10 +63,38 @@
             &:hover{
                 color: $lightTurquoise;
             }
-            @include fontSize(1.2rem) 
+            @include fontSize(1.2rem);
+            font-weight: lighter; 
+            letter-spacing: 0.5rem;
         }
         .text_menu{
             display: none;
+        }
+        
+    }
+    .port{
+        .container_port{
+            width: 99%;
+            left: 1%;
+        }
+        .content{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flex-item{
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    .skills{
+        .content{
+            li{
+            font-size: 2rem;
+                &::after{
+                    top: 0.5rem;
+                    left: 22%;
+                }
+            }
         }
     }
     
@@ -126,17 +154,18 @@
         }
         h2{
             top: 30rem;
-            /* top: 10%; */
         }
         
     }
-    /* .skills{
+    .skills{
         .header{
-            h2{
-                top: 0;
-            }       
-    } */
-} 
+
+        }
+        h2{
+            top: 26rem;
+        }
+    }
+}
 
 /* min: 523 */
 

@@ -315,15 +315,14 @@ section {
   padding-bottom: 3rem;
 }
 .content .image_about {
-  width: 98%;
+  width: 100%;
   position: relative;
-  left: 1%;
   z-index: -10;
 }
 .content .image_about img {
-  width: 150%;
+  width: 100%;
   position: absolute;
-  top: 4rem;
+  top: 0;
   right: 0;
 }
 .content .container-about {
@@ -474,16 +473,29 @@ section {
   background-image: url("../assets/portfolioSvg.svg");
 }
 .port .content {
+  padding-top: 3rem;
   background: #29a6b7;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.port .flex-item {
+  flex: 100%;
+  max-width: 100%;
 }
 .port .container_port {
   width: 98%;
-  height: auto;
+  /* height: 16rem; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
+  margin-bottom: 1%;
+  /* margin-bottom: 3px; */
   position: relative;
   overflow: hidden;
+  /* background-image: url('../');
+  background-size: cover; */
+  /* REVISRAREVIISARREVISARREVISAR********** */
 }
 .port .container_port:hover .marco {
   bottom: 0%;
@@ -514,6 +526,12 @@ section {
   position: absolute;
   bottom: -50%;
   transition: all 0.2s ease;
+}
+.port .container_port .img-port {
+  /* width: 100%;
+  height: 100%;
+  background-image: url('../assets/fotoAboutGradients.jpg');
+  background-size: cover; */
 }
 .port .container_port .marco_hover {
   width: 100%;
@@ -585,6 +603,15 @@ section {
   background: none;
 }
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (min-width: 800px) {
+    .port{
+        .flex-item {
+            flex: 50%;
+            max-width: 50%;
+          }
+    }
+  } */
 .skills {
   height: auto;
 }
@@ -813,12 +840,35 @@ footer p a {
     font-weight: 600;
     color: white;
     font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
   }
   header a:hover {
     color: #08fdd8;
   }
   header .text_menu {
     display: none;
+  }
+
+  .port .container_port {
+    width: 99%;
+    left: 1%;
+  }
+  .port .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .port .flex-item {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .skills .content li {
+    font-size: 2rem;
+  }
+  .skills .content li::after {
+    top: 0.5rem;
+    left: 22%;
   }
 }
 @media screen and (min-width: 832px) {
@@ -850,7 +900,7 @@ footer p a {
   .header {
     width: 20%;
     height: auto;
-    background-color: #25959e;
+    background-color: #13ba9a;
   }
   .header .num-svg {
     width: 12rem;
@@ -865,19 +915,15 @@ footer p a {
   }
 
   .port .header {
-    background: #155e68;
+    background: #25959e;
   }
   .port h2 {
     top: 30rem;
-    /* top: 10%; */
   }
 
-  /* .skills{
-      .header{
-          h2{
-              top: 0;
-          }       
-  } */
+  .skills h2 {
+    top: 26rem;
+  }
 }
 /* min: 523 */
 

@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./app.js"></script>
 </head>
 <body>
         <header id="inicio">
                 <div class="nav">
                     <div class="menu_ham">
-                        <button type="button">
+                        <button class="abrirMenu" type="button">
                             <i class="fas fa-bars"></i>
                         </button>
                     </div>
                     <main>
                     <div class="main-container">
-                        <nav class="menu">
+                        <nav class="menu-hide">
                             <ul>
                                 <li>
                                     <a href="#about">sobre mi</a>
@@ -35,7 +36,7 @@
                             </ul>
                             <div class="text_menu">
                                 <p>¿Necesitas ayuda?, ponte en contacto conmigo, estaré encantado de poder ayudarte</p>
-                                <button type="button">Contacto</button>
+                                <button class="contacto" type="button" onclick="mostrarEnlace()">Contacto</button>
                             </div>
                         </nav>
                     </div>

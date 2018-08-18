@@ -36,10 +36,11 @@ header{
         color: $strongPink;
     }
     /* menu hidden*********** */
-    .menu{
+    .menu-hide{
         display: none;
     }
     nav{
+        display: block;
         width: 100%;
         height: 100%;
         background: $navGrey;
@@ -48,6 +49,17 @@ header{
         z-index: 20;
         padding-left: 1rem;
         padding-top: 5.5rem;
+        animation: entradaMenu 0.4s ease 1;
+        @keyframes entradaMenu{
+            0%{
+                opacity: 0;
+                right: 100%;
+            }
+            100%{
+                opacity: 1;
+                right: 0;
+            }
+        }
     }
     li{
         padding-top: 2rem ;

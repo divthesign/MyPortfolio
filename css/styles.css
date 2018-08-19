@@ -155,18 +155,14 @@ header .menu_ham button div {
   margin: 0.5rem;
   background: #fc0853;
   animation: onClick 1s ease 3;
-}
-@keyframes onClick {
-  0% {
-    transform: rotate(90deg);
-  }
-  100% {
-    width: 100%;
-  }
-}
-header .fas {
-  font-size: 3rem;
-  color: #fc0853;
+  /*  @keyframes onClick{
+       0%{
+           transform: rotate(90deg)                        
+       }
+       100%{
+           width: 100%;
+       }
+   } */
 }
 header .menu-hide {
   display: none;
@@ -646,7 +642,7 @@ section {
   background: none;
 }
 .port .hidden {
-  display: none;
+  /* display: none; */
 }
 .port .cajas {
   animation: showBoxes 0.4s ease 1;
@@ -860,9 +856,6 @@ footer p a {
     @return $resultado
 }*/
 @media screen and (min-width: 522px) {
-  header .fas {
-    font-size: 4rem;
-  }
   header .logo_externo {
     width: 8.5rem;
     height: 8.5rem;
@@ -884,7 +877,7 @@ footer p a {
   header .menu_ham {
     display: none;
   }
-  header .menu {
+  header .menu-show {
     display: block;
     padding-top: 0;
   }

@@ -36,20 +36,16 @@ header{
                 margin: 0.5rem;
                 background: $strongPink;
                 animation: onClick 1s ease 3;
-                @keyframes onClick{
+               /*  @keyframes onClick{
                     0%{
                         transform: rotate(90deg)                        
                     }
                     100%{
                         width: 100%;
                     }
-                }
+                } */
             }
         }        
-    }
-    .fas{
-        font-size: 3rem;
-        color: $strongPink;
     }
     /* menu hidden*********** */
     .menu-hide{

@@ -29,6 +29,22 @@ header{
             border: none;
             cursor: pointer;
             outline: inherit;
+            div{
+                width: 3rem;
+                height: 3px;
+                background: white;
+                margin: 0.5rem;
+                background: $strongPink;
+                animation: onClick 1s ease 3;
+                @keyframes onClick{
+                    0%{
+                        transform: rotate(90deg)                        
+                    }
+                    100%{
+                        width: 100%;
+                    }
+                }
+            }
         }        
     }
     .fas{
@@ -70,7 +86,7 @@ header{
         font-family: $title1;
         font-weight: 800;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 3rem;
         &:hover{
             color: $cleanWhite;
         }

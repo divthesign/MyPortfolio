@@ -148,6 +148,22 @@ header .menu_ham button {
   cursor: pointer;
   outline: inherit;
 }
+header .menu_ham button div {
+  width: 3rem;
+  height: 3px;
+  background: white;
+  margin: 0.5rem;
+  background: #fc0853;
+  animation: onClick 1s ease 3;
+}
+@keyframes onClick {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    width: 100%;
+  }
+}
 header .fas {
   font-size: 3rem;
   color: #fc0853;
@@ -186,7 +202,7 @@ header a {
   font-family: "Montserrat";
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 header a:hover {
   color: white;
@@ -628,6 +644,22 @@ section {
 .port .ver_mas .btn_mas:hover {
   transform: rotateZ(90deg);
   background: none;
+}
+.port .hidden {
+  display: none;
+}
+.port .cajas {
+  animation: showBoxes 0.4s ease 1;
+}
+@keyframes showBoxes {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

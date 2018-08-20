@@ -32,6 +32,7 @@ $textCenter: center;
     font-size: 1rem;
     text-transform: uppercase;
     outline: inherit;
+    cursor: pointer;
     &:hover{
         background: $cleanWhite;
         color: $lightTurquoise; 

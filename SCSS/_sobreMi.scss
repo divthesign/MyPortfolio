@@ -41,8 +41,7 @@ section{
             width: 100%;
             position: absolute;
             top: 0;
-            right: 0;
-    
+            right: 0;    
         }
     }
     .container-about{
@@ -66,11 +65,12 @@ section{
         margin-bottom: 2rem;
     }
     .uno{
-        background-image: url('../assets/MonsterSvg.svg');
-        background-size: 90%;
+        background-image: url('../assets/PerfilSvg.svg');
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: 2rem center;
         position: relative;
+        animation: perfil 10s ease-in-out infinite;
         &::after{
             content: '';
             width: 1%;
@@ -79,6 +79,64 @@ section{
             position: absolute;
             top: 100%;
         }
+        @keyframes perfil{
+            0%{
+                background-position-y: 0rem;
+                background-position-x: center;
+                background-size: 0;
+                
+            }
+            2%{
+                background-size: 100%;
+            }
+            22%{
+                background-size: 100%;
+            }
+            23%{
+                background-position-y: 0rem;
+                background-size: 0;
+                
+            }
+            24%{
+                background-position-y: -8rem;
+                background-size: 100%;
+                
+            }
+            50%{
+                background-position-y: -8rem;
+            }
+            57%{
+                background-position-y: -8rem;
+                background-size: 100%;
+            }
+            58%{
+                background-position-y: -8rem;
+                background-size: 0;
+            }
+            59%{
+                background-position-y: -16rem;
+                background-size: 100%;
+            }
+            87%{
+                background-position-y: -16rem;
+                background-size: 0;
+            }
+            88%{
+                background-position-y: 0rem;
+                background-size: 100%;
+            }
+            89%{
+                background-position-y: 0rem;
+                background-position-x: center;
+
+            }
+            100%{
+                background-position-y: 0rem;
+                background-position-x: center;
+
+            }
+        }
+    
     }
     .dos{
         background-image: url('../assets/dispositivosSvg.svg');
@@ -151,7 +209,10 @@ section{
         @include xCenter;
         position: relative;
         padding: 1rem 0 2rem 0;
-        border: 1px solid $cleanWhite;
+        border-top: 1px solid $cleanWhite;
+    }
+    .contenido{
+        padding-bottom: 3rem;
     }
     .text_cv{
         text-align: $textCenter;
@@ -160,6 +221,7 @@ section{
         text-align: $textCenter;
         @include vCenter;
         top: 6rem;
+        padding-top: 1.5rem;
     }
     button{
         margin-top: 1.5rem;

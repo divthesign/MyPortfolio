@@ -1,5 +1,6 @@
 class App{
     constructor(){
+        this.menuHam = document.querySelector('.change') 
         this.btnAbrirMenu = document.querySelector('.abrirMenu')
         this.menuDesp = document.querySelector('.menu-hide')
         
@@ -19,6 +20,7 @@ class App{
     }
     mostrarMenu(){
         this.menuDesp.classList.toggle('menu-hide')
+        this.menuHam.classList.toggle('change')
     }
     
 

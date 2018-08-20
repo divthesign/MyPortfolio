@@ -19,34 +19,56 @@ header{
         bottom: 15%;
         left: 3rem;
     }
-    .menu_ham{
-        float: right;
-        padding-right: 1rem;
-        position: relative;
-        z-index: 30;
-        button{
-            background: none;
-            border: none;
-            cursor: pointer;
-            outline: inherit;
-            div{
-                width: 3rem;
-                height: 3px;
-                background: white;
-                margin: 0.5rem;
-                background: $strongPink;
-                animation: onClick 1s ease 3;
-               /*  @keyframes onClick{
-                    0%{
-                        transform: rotate(90deg)                        
-                    }
-                    100%{
-                        width: 100%;
-                    }
-                } */
-            }
-        }        
+    .abrirMenu{
+        display: inline-block;
+        width: 4.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        .bar1{
+            position: absolute;
+            width: 100%;
+            height: .5rem;            
+            background: $strongPink; 
+            transform: translate(-1rem);
+            transition: .2s ease;
+        }
+        .bar2{
+            position: absolute;
+            width: 100%;
+            height: .5rem;
+            background: $strongPink;
+            margin-top: 1.1rem;
+            transform: translate(1rem);
+            transition: .2s ease;
+        }
+        .bar3{
+            position: absolute;
+            width: 100%;
+            height: .5rem;
+            background: $strongPink;
+            margin-top: 2.2rem;
+            transform: translate(-1rem);
+            transition: .2s ease;
+        }
     }
+    .change{
+        .bar1{
+            transform: translate(0);
+        }
+        .bar2{
+            transform: translate(0);
+        }
+        .bar3{
+            transform: translate(0);
+        }
+    }
+        
+    
     /* menu hidden*********** */
     .menu-hide{
         display: none;
@@ -93,8 +115,9 @@ header{
             font-family: $title1;
             font-weight: 100;
             width: 90%;
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: $lightTurquoise;
+            line-height: 1.6;
         }
         button{
             @include btn; 

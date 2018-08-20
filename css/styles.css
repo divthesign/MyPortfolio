@@ -136,33 +136,51 @@ header::after {
   bottom: 15%;
   left: 3rem;
 }
-header .menu_ham {
-  float: right;
-  padding-right: 1rem;
-  position: relative;
-  z-index: 30;
-}
-header .menu_ham button {
-  background: none;
-  border: none;
+header .abrirMenu {
+  display: inline-block;
+  width: 4.5rem;
+  height: 2.5rem;
   cursor: pointer;
-  outline: inherit;
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  margin-top: 1rem;
+  margin-right: 2rem;
 }
-header .menu_ham button div {
-  width: 3rem;
-  height: 3px;
-  background: white;
-  margin: 0.5rem;
+header .abrirMenu .bar1 {
+  position: absolute;
+  width: 100%;
+  height: 0.5rem;
   background: #fc0853;
-  animation: onClick 1s ease 3;
-  /*  @keyframes onClick{
-       0%{
-           transform: rotate(90deg)                        
-       }
-       100%{
-           width: 100%;
-       }
-   } */
+  transform: translate(-1rem);
+  transition: 0.2s ease;
+}
+header .abrirMenu .bar2 {
+  position: absolute;
+  width: 100%;
+  height: 0.5rem;
+  background: #fc0853;
+  margin-top: 1.1rem;
+  transform: translate(1rem);
+  transition: 0.2s ease;
+}
+header .abrirMenu .bar3 {
+  position: absolute;
+  width: 100%;
+  height: 0.5rem;
+  background: #fc0853;
+  margin-top: 2.2rem;
+  transform: translate(-1rem);
+  transition: 0.2s ease;
+}
+header .change .bar1 {
+  transform: translate(0);
+}
+header .change .bar2 {
+  transform: translate(0);
+}
+header .change .bar3 {
+  transform: translate(0);
 }
 header .menu-hide {
   display: none;
@@ -210,8 +228,9 @@ header .text_menu p {
   font-family: "Montserrat";
   font-weight: 100;
   width: 90%;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #08fdd8;
+  line-height: 1.6;
 }
 header .text_menu button {
   margin-top: 1rem;
@@ -224,6 +243,7 @@ header .text_menu button {
   font-size: 1rem;
   text-transform: uppercase;
   outline: inherit;
+  cursor: pointer;
 }
 header .text_menu button:hover {
   background: white;
@@ -373,11 +393,12 @@ section {
   margin-bottom: 2rem;
 }
 .content .uno {
-  background-image: url("../assets/MonsterSvg.svg");
-  background-size: 90%;
+  background-image: url("../assets/PerfilSvg.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 2rem center;
   position: relative;
+  animation: perfil 10s ease-in-out infinite;
 }
 .content .uno::after {
   content: "";
@@ -386,6 +407,58 @@ section {
   background: #d1d1d1;
   position: absolute;
   top: 100%;
+}
+@keyframes perfil {
+  0% {
+    background-position-y: 0rem;
+    background-position-x: center;
+    background-size: 0;
+  }
+  2% {
+    background-size: 100%;
+  }
+  22% {
+    background-size: 100%;
+  }
+  23% {
+    background-position-y: 0rem;
+    background-size: 0;
+  }
+  24% {
+    background-position-y: -8rem;
+    background-size: 100%;
+  }
+  50% {
+    background-position-y: -8rem;
+  }
+  57% {
+    background-position-y: -8rem;
+    background-size: 100%;
+  }
+  58% {
+    background-position-y: -8rem;
+    background-size: 0;
+  }
+  59% {
+    background-position-y: -16rem;
+    background-size: 100%;
+  }
+  87% {
+    background-position-y: -16rem;
+    background-size: 0;
+  }
+  88% {
+    background-position-y: 0rem;
+    background-size: 100%;
+  }
+  89% {
+    background-position-y: 0rem;
+    background-position-x: center;
+  }
+  100% {
+    background-position-y: 0rem;
+    background-position-x: center;
+  }
 }
 .content .dos {
   background-image: url("../assets/dispositivosSvg.svg");
@@ -459,7 +532,10 @@ section {
   margin-right: auto;
   position: relative;
   padding: 1rem 0 2rem 0;
-  border: 1px solid white;
+  border-top: 1px solid white;
+}
+.content .contenido {
+  padding-bottom: 3rem;
 }
 .content .text_cv {
   text-align: center;
@@ -471,6 +547,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 6rem;
+  padding-top: 1.5rem;
 }
 .content button {
   margin-top: 1.5rem;
@@ -874,7 +951,7 @@ footer p a {
   }
 }
 @media screen and (min-width: 769px) {
-  header .menu_ham {
+  header .abrirMenu {
     display: none;
   }
   header .menu-show {

@@ -65,10 +65,10 @@ section{
         margin-bottom: 2rem;
     }
     .uno{
-        background-image: url('../assets/PerfilSvg.svg');
-        background-size: 100%;
+        background-image: url('../assets/yoSvg.svg');
+        background-size: 85;
         background-repeat: no-repeat;
-        background-position: 2rem center;
+        background-position: center center;
         position: relative;
         animation: perfil 10s ease-in-out infinite;
         &::after{
@@ -78,65 +78,7 @@ section{
             background: #d1d1d1;
             position: absolute;
             top: 100%;
-        }
-        @keyframes perfil{
-            0%{
-                background-position-y: 0rem;
-                background-position-x: center;
-                background-size: 0;
-                
-            }
-            2%{
-                background-size: 100%;
-            }
-            22%{
-                background-size: 100%;
-            }
-            23%{
-                background-position-y: 0rem;
-                background-size: 0;
-                
-            }
-            24%{
-                background-position-y: -8rem;
-                background-size: 100%;
-                
-            }
-            50%{
-                background-position-y: -8rem;
-            }
-            57%{
-                background-position-y: -8rem;
-                background-size: 100%;
-            }
-            58%{
-                background-position-y: -8rem;
-                background-size: 0;
-            }
-            59%{
-                background-position-y: -16rem;
-                background-size: 100%;
-            }
-            87%{
-                background-position-y: -16rem;
-                background-size: 0;
-            }
-            88%{
-                background-position-y: 0rem;
-                background-size: 100%;
-            }
-            89%{
-                background-position-y: 0rem;
-                background-position-x: center;
-
-            }
-            100%{
-                background-position-y: 0rem;
-                background-position-x: center;
-
-            }
-        }
-    
+        }    
     }
     .dos{
         background-image: url('../assets/dispositivosSvg.svg');
@@ -174,15 +116,26 @@ section{
             }
             50%{
                 background-position: center;
+                background-size: 70%;
             }
             75%{
                 background-position: center;
+                background-size: 70%;
             }
-            77%{
+            76%{
+                background-size: 0%;
+            }
+            78%{
                 background-position: bottom;
+                background-size: 80%;
+            }
+            79%{
+                background-position: bottom;
+                background-size: 70%;
             }
             100%{
                 background-position: bottom;
+                background-size: 70%;
             }
         }
     }

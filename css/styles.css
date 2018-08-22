@@ -138,19 +138,19 @@ header::after {
 }
 header .abrirMenu {
   display: inline-block;
-  width: 4.5rem;
+  width: 3rem;
   height: 2.5rem;
   cursor: pointer;
   position: absolute;
   z-index: 100;
   right: 0;
-  margin-top: 1rem;
-  margin-right: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
 }
 header .abrirMenu .bar1 {
   position: absolute;
   width: 100%;
-  height: 0.5rem;
+  height: 15%;
   background: #fc0853;
   transform: translate(-1rem);
   transition: 0.2s ease;
@@ -158,7 +158,7 @@ header .abrirMenu .bar1 {
 header .abrirMenu .bar2 {
   position: absolute;
   width: 100%;
-  height: 0.5rem;
+  height: 15%;
   background: #fc0853;
   margin-top: 1.1rem;
   transform: translate(1rem);
@@ -167,7 +167,7 @@ header .abrirMenu .bar2 {
 header .abrirMenu .bar3 {
   position: absolute;
   width: 100%;
-  height: 0.5rem;
+  height: 15%;
   background: #fc0853;
   margin-top: 2.2rem;
   transform: translate(-1rem);
@@ -393,10 +393,10 @@ section {
   margin-bottom: 2rem;
 }
 .content .uno {
-  background-image: url("../assets/PerfilSvg.svg");
-  background-size: 100%;
+  background-image: url("../assets/yoSvg.svg");
+  background-size: 85;
   background-repeat: no-repeat;
-  background-position: 2rem center;
+  background-position: center center;
   position: relative;
   animation: perfil 10s ease-in-out infinite;
 }
@@ -407,58 +407,6 @@ section {
   background: #d1d1d1;
   position: absolute;
   top: 100%;
-}
-@keyframes perfil {
-  0% {
-    background-position-y: 0rem;
-    background-position-x: center;
-    background-size: 0;
-  }
-  2% {
-    background-size: 100%;
-  }
-  22% {
-    background-size: 100%;
-  }
-  23% {
-    background-position-y: 0rem;
-    background-size: 0;
-  }
-  24% {
-    background-position-y: -8rem;
-    background-size: 100%;
-  }
-  50% {
-    background-position-y: -8rem;
-  }
-  57% {
-    background-position-y: -8rem;
-    background-size: 100%;
-  }
-  58% {
-    background-position-y: -8rem;
-    background-size: 0;
-  }
-  59% {
-    background-position-y: -16rem;
-    background-size: 100%;
-  }
-  87% {
-    background-position-y: -16rem;
-    background-size: 0;
-  }
-  88% {
-    background-position-y: 0rem;
-    background-size: 100%;
-  }
-  89% {
-    background-position-y: 0rem;
-    background-position-x: center;
-  }
-  100% {
-    background-position-y: 0rem;
-    background-position-x: center;
-  }
 }
 .content .dos {
   background-image: url("../assets/dispositivosSvg.svg");
@@ -497,15 +445,26 @@ section {
   }
   50% {
     background-position: center;
+    background-size: 70%;
   }
   75% {
     background-position: center;
+    background-size: 70%;
   }
-  77% {
+  76% {
+    background-size: 0%;
+  }
+  78% {
     background-position: bottom;
+    background-size: 80%;
+  }
+  79% {
+    background-position: bottom;
+    background-size: 70%;
   }
   100% {
     background-position: bottom;
+    background-size: 70%;
   }
 }
 .content h3 {
@@ -719,7 +678,7 @@ section {
   background: none;
 }
 .port .hidden {
-  /* display: none; */
+  display: none;
 }
 .port .cajas {
   animation: showBoxes 0.4s ease 1;
@@ -735,15 +694,6 @@ section {
   }
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-/* @media screen and (min-width: 800px) {
-    .port{
-        .flex-item {
-            flex: 50%;
-            max-width: 50%;
-          }
-    }
-  } */
 .skills {
   height: auto;
 }
@@ -760,6 +710,7 @@ section {
 .skills .content {
   background: white;
   padding-top: 3rem;
+  padding-left: 0.5rem;
 }
 .skills .content .lista_skills {
   width: 90%;
@@ -777,10 +728,13 @@ section {
   color: #5e5e5e;
   text-transform: lowercase;
   position: absolute;
-  left: -1rem;
+  left: -0.2rem;
   top: -1rem;
 }
-.skills .content .code::after {
+.skills .content .code-dos {
+  position: relative;
+}
+.skills .content .code-dos::after {
   content: "</ul>";
   font-family: "Damion";
   font-size: 0.8rem;
@@ -806,7 +760,7 @@ section {
   background-color: #fc0853;
   position: absolute;
   left: 10%;
-  margin-left: 8.5rem;
+  margin-left: 7.2rem;
   box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
 }
 .skills .content li:nth-child(1)::after {
@@ -845,6 +799,9 @@ section {
 .skills .content li:nth-child(14)::after {
   box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
 }
+.skills .software {
+  margin-top: 3rem;
+}
 .skills .software h4 {
   width: 70%;
   color: #fc0853;
@@ -867,8 +824,8 @@ section {
 .skills .software h4::before {
   content: "";
   position: absolute;
-  left: 110%;
-  top: 1rem;
+  left: 105%;
+  top: 2rem;
   background-image: url("../assets/afterSvg.svg");
   background-repeat: no-repeat;
   width: 3.5rem;
@@ -906,12 +863,12 @@ footer .git a {
   text-decoration: none;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-transform: uppercase;
   transition: all 0.3s ease-in;
 }
 footer .git a:hover {
-  text-shadow: 110px 1px 2px white, -110px 1px 2px white, 1px 1px 40px white;
+  text-shadow: 70px 1px 2px white, -70px 1px 2px white, 1px 1px 40px white;
   color: #fc0853;
 }
 footer p {
@@ -968,7 +925,7 @@ footer p a {
   header a {
     font-weight: 600;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 0.5rem;
   }
@@ -1018,7 +975,7 @@ footer p a {
     font-size: 12rem;
   }
   header a {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1052,6 +1009,18 @@ footer p a {
 
   .skills h2 {
     top: 26rem;
+  }
+  .skills .content .lista_skills1 {
+    display: flex;
+  }
+  .skills .content .flex_uno {
+    flex: 1;
+  }
+  .skills .content .flex_dos {
+    flex: 1;
+  }
+  .skills .content li::after {
+    margin-left: 9.5rem;
   }
 }
 /* min: 523 */

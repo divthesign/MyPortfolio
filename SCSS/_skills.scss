@@ -13,6 +13,7 @@
     .content{
         background: $cleanWhite;
         padding-top: 3rem;
+        padding-left: 0.5rem;
         .lista_skills{
             width: 90%;
             margin-top: 3rem;
@@ -25,9 +26,12 @@
                 @include codeSimulation;
                 text-transform: lowercase;
                 position: $abs;
-                left: -1rem;
-                top: -1rem;            
+                left: -0.2rem;
+                top: -1rem;          
             }
+        }
+        .code-dos{
+            position: relative;
             &::after{
                 content:"</ul>";
                 @include codeSimulation;
@@ -52,7 +56,7 @@
                 background-color: $strongPink;
                 position: absolute;
                 left: 10%;
-                margin-left: 8.5rem;
+                margin-left: 7.2rem;
                 box-shadow: 25px 0 $strongPink,
                             50px 0 $navGrey,
                             75px 0 $navGrey,
@@ -133,6 +137,7 @@
         }
     }
     .software{
+        margin-top: 3rem;
         h4{
             width: 70%;
             color: $strongPink;
@@ -154,8 +159,8 @@
             &::before{
             content:"";
             position: $abs;
-            left: 110%;
-            top: 1rem;
+            left: 105%;
+            top: 2rem;
             background-image: url('../assets/afterSvg.svg');
             background-repeat: no-repeat;
             width: 3.5rem;

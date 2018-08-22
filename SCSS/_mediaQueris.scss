@@ -60,7 +60,7 @@
             &:hover{
                 color: $lightTurquoise;
             }
-            @include fontSize(1.2rem);
+            @include fontSize(1rem);
             font-weight: lighter; 
             letter-spacing: 0.5rem;
         }
@@ -117,7 +117,7 @@
             @include tamanoTitulo(12rem)
         }
         a{
-            @include fontSize(1.6rem)
+            @include fontSize(1.2rem)
         }
     }
 }
@@ -160,6 +160,22 @@
         }
         h2{
             top: 26rem;
+        }
+        .content{
+            .lista_skills1{
+                display: flex;
+            }
+            .flex_uno{
+                flex: 1;
+            }
+            .flex_dos{
+                flex: 1;
+            }
+            li{
+                &::after{
+                    margin-left: 9.5rem;
+                }
+            }
         }
     }
 }

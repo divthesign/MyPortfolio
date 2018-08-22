@@ -21,18 +21,18 @@ header{
     }
     .abrirMenu{
         display: inline-block;
-        width: 4.5rem;
+        width: 3rem;
         height: 2.5rem;
         cursor: pointer;
         position: absolute;
         z-index: 100;
         right: 0;
-        margin-top: 1rem;
-        margin-right: 2rem;
+        margin-top: .5rem;
+        margin-right: 1.5rem;
         .bar1{
             position: absolute;
             width: 100%;
-            height: .5rem;            
+            height: 15%;            
             background: $strongPink; 
             transform: translate(-1rem);
             transition: .2s ease;
@@ -40,7 +40,7 @@ header{
         .bar2{
             position: absolute;
             width: 100%;
-            height: .5rem;
+            height: 15%;
             background: $strongPink;
             margin-top: 1.1rem;
             transform: translate(1rem);
@@ -49,7 +49,7 @@ header{
         .bar3{
             position: absolute;
             width: 100%;
-            height: .5rem;
+            height: 15%;
             background: $strongPink;
             margin-top: 2.2rem;
             transform: translate(-1rem);

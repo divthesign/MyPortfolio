@@ -115,6 +115,7 @@ header {
   width: 100%;
   height: 100vh;
   background-color: #252627;
+  transition: all 0.4s ease;
   /* menu hidden*********** */
   /* ********** */
 }
@@ -317,11 +318,26 @@ header .sub_heading {
   transform: translate(-50%, -50%);
 }
 
+main {
+  overflow: hidden;
+}
+
 section {
   width: 100%;
   height: auto;
+  transition: all 0.4s ease 0s;
+  /* REVISAR******* */
+  opacity: 1;
+  transform: scale(1);
 }
 
+.about {
+  transform: scale(0.8);
+  transition: all 0.4s ease 0s;
+  opacity: 0;
+}
+
+/* REVISAR********************* */
 .header {
   width: 100%;
   height: 20vh;
@@ -1026,11 +1042,29 @@ footer p a {
 /* min: 523 */
 .btn-top {
   position: fixed;
+  width: 3rem;
+  height: 3rem;
   right: 4rem;
   bottom: 4rem;
+}
+.btn-top button {
+  color: white;
   padding: 2rem;
-  opacity: 0.8;
-  background-color: darkgray;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: none;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 27%;
+  top: 35%;
+  /* overflow: hidden; */
 }
 
 .hide-scroll {

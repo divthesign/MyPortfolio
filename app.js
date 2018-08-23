@@ -14,7 +14,8 @@ class App{
         this.divTop = document.querySelector('#div-top')
         this.header = document.querySelector('header')
         this.h1Header = document.querySelector('header h1')
-        this.bajoHeader = document.querySelector('#bajo-header')        
+        this.bajoHeader = document.querySelector('#bajo-header')
+        
         
         /* abrir menu mobile */
         this.btnAbrirMenu.addEventListener('click', this.mostrarMenu.bind(this))
@@ -25,7 +26,9 @@ class App{
         /* botón arriba */
         document.addEventListener('scroll',
             this.scrollDetect.bind(this))
-            this.btnTop.addEventListener('click', this.subir.bind(this))        
+            this.btnTop.addEventListener('click', this.subir.bind(this))  
+            
+        window.addEventListener('scroll', this.scrollSection.bind(this))
     }
 
     /* abrir menu mobile */
@@ -59,10 +62,19 @@ class App{
             behavior: 'smooth'
         })
     }
+
+    scrollSection(){
+        this.header = document.querySelector('header')
+        this.scrollSection = document.querySelector('section')
+        console.log(this.scrollSection)
+        this.ypos = window.pageYOffset
+        if (this.ypos > 287) {
+            this.scrollSection.classList.remove('about')
+        }else{
+            /* this.scrollSection.style.height = "70px" */
+            this.scrollSection.classList.add('about')
+        }
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => { new App()})
-
-   /* <div id="div-top" class="btn-top hide-btn">
-    <button id="btn-top" type="button">Top</button>
-</div> */

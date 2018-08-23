@@ -5,6 +5,7 @@ header{
     width: 100%;
     height: 100vh;
     background-color: $bckgGrey;
+    transition: all 0.4s ease;
     &::before{
         content: '<body>';
         @include codeSimulation; 

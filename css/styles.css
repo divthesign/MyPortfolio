@@ -1024,5 +1024,17 @@ footer p a {
   }
 }
 /* min: 523 */
+.btn-top {
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  padding: 2rem;
+  opacity: 0.8;
+  background-color: darkgray;
+}
+
+.hide-scroll {
+  display: none;
+}
 
 /*# sourceMappingURL=css/styles.css.map */

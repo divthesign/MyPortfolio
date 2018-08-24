@@ -10,8 +10,8 @@
         height: 1.5rem;
         background-color: transparent;
         border: none;
-        border: solid white;
-        border-width: 0 3px 3px 0;
+        border: solid $strongPink;
+        border-width: 0 4px 4px 0;
         display: inline-block;
         padding: 3px;
         transform: rotate(-135deg);
@@ -20,7 +20,6 @@
         position: absolute;
         left: 27%;
         top: 35%;
-        /* overflow: hidden; */
     }
 }
 

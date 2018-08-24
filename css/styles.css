@@ -295,6 +295,12 @@ header .logo_externo .logo_interno {
   position: relative;
   top: 1.5%;
   left: 1.5%;
+  /* &::after{
+      content: "By Daniel Verdú";
+      position: absolute;
+      top: 105%;
+      font-size: 1rem;
+  } */
 }
 header h1 {
   color: white;
@@ -873,8 +879,18 @@ main {
 }
 
 footer {
+  position: relative;
   background-color: #252627;
   padding: 3rem 0 0 0;
+}
+footer::before {
+  content: "</html>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: absolute;
+  top: 9rem;
+  left: 0.5rem;
 }
 footer .git {
   text-align: center;
@@ -1019,6 +1035,9 @@ footer p a {
     max-width: 49.5%;
   }
 
+  .skills .content {
+    padding-left: 4.5rem;
+  }
   .skills .content li {
     font-size: 2rem;
   }
@@ -1093,6 +1112,22 @@ footer p a {
     margin-left: 9.5rem;
   }
 }
+@media screen and (min-width: 1480px) {
+  .skills .content {
+    padding-left: 5.5rem;
+  }
+  .skills .content li {
+    font-size: 3rem;
+  }
+  .skills .content li::after {
+    top: 1rem;
+    left: 22%;
+    margin-left: 16rem;
+  }
+  .skills .content .code-dos::after {
+    left: 18rem;
+  }
+}
 /* min: 523 */
 .btn-top {
   position: fixed;
@@ -1107,8 +1142,8 @@ footer p a {
   height: 1.5rem;
   background-color: transparent;
   border: none;
-  border: solid white;
-  border-width: 0 3px 3px 0;
+  border: solid #fc0853;
+  border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 3px;
   transform: rotate(-135deg);
@@ -1117,7 +1152,6 @@ footer p a {
   position: absolute;
   left: 27%;
   top: 35%;
-  /* overflow: hidden; */
 }
 
 .hide-scroll {

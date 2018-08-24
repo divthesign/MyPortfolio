@@ -1,4 +1,12 @@
 footer{
+    position: relative;
+    &::before{
+        content: '</html>';
+        @include codeSimulation; 
+        position: $abs;
+        top: 9rem;
+        left: 0.5rem;
+    }
     background-color: $bckgGrey;
     padding: 3rem 0 0 0;
     .git{

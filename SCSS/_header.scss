@@ -155,6 +155,12 @@ header{
             position: relative;
             top: 1.5%;
             left: 1.5%;
+            /* &::after{
+                content: "By Daniel Verdú";
+                position: absolute;
+                top: 105%;
+                font-size: 1rem;
+            } */
         } 
     }
     h1{

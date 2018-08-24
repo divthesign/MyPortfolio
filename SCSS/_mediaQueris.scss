@@ -148,6 +148,7 @@
     }
     .skills{
         .content{
+            padding-left: 4.5rem;
             li{
             font-size: 2rem;
                 &::after{
@@ -237,6 +238,27 @@
             li{
                 &::after{
                     margin-left: 9.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1480px){
+    .skills{
+        .content{
+            padding-left: 5.5rem;
+            li{
+            font-size: 3rem;
+                &::after{
+                    top: 1rem;
+                    left: 22%;
+                    margin-left: 16rem;
+                }
+            }
+            .code-dos{
+                &::after{
+                    left: 18rem;
                 }
             }
         }

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  background-color: #252627;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -217,7 +221,7 @@ header a {
   font-family: "Montserrat";
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 header a:hover {
   color: white;
@@ -258,8 +262,8 @@ header .titulo {
   transform: translate(-50%, -50%);
 }
 header .logo_externo {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 4.2rem;
+  height: 4.2rem;
   background: linear-gradient(to right, #fc0853, #08fdd8);
   position: absolute;
   top: 50%;
@@ -297,7 +301,7 @@ header h1 {
   font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 3.8rem;
+  font-size: 3rem;
   text-align: center;
   position: relative;
   z-index: 10;
@@ -322,22 +326,24 @@ main {
   overflow: hidden;
 }
 
-section {
+* section {
   width: 100%;
   height: auto;
   transition: all 0.4s ease 0s;
   /* REVISAR******* */
   opacity: 1;
   transform: scale(1);
+  transform: translatey(0);
 }
 
 .about {
-  transform: scale(0.8);
+  transform: scale(1.2);
   transition: all 0.4s ease 0s;
   opacity: 0;
+  transform: translatey(-5rem);
+  /* REVISAR********************* */
 }
 
-/* REVISAR********************* */
 .header {
   width: 100%;
   height: 20vh;
@@ -357,7 +363,7 @@ section {
   width: 100%;
   font-family: "Montserrat";
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
   text-transform: uppercase;
   position: absolute;
@@ -757,12 +763,12 @@ section {
   color: #5e5e5e;
   text-transform: lowercase;
   position: absolute;
-  left: 6.5rem;
+  left: 5rem;
   bottom: 1rem;
 }
 .skills .content li {
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 800;
   text-transform: uppercase;
   padding-bottom: 2rem;
@@ -776,7 +782,7 @@ section {
   background-color: #fc0853;
   position: absolute;
   left: 10%;
-  margin-left: 7.2rem;
+  margin-left: 6rem;
   box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
 }
 .skills .content li:nth-child(1)::after {
@@ -905,6 +911,54 @@ footer p a {
     $resultado: $width, $height;
     @return $resultado
 }*/
+@media screen and (min-width: 302px) {
+  header .logo_externo {
+    width: 5rem;
+    height: 5rem;
+  }
+  header h1 {
+    font-size: 3.5rem;
+  }
+  header a {
+    font-size: 2.5rem;
+  }
+
+  .skills .content li {
+    font-size: 1rem;
+  }
+  .skills .content li::after {
+    margin-left: 7rem;
+  }
+  .skills .content .code-dos::after {
+    left: 6.5rem;
+  }
+}
+@media screen and (min-width: 375px) {
+  header .logo_externo {
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  header a {
+    font-size: 3rem;
+  }
+
+  .header h2 {
+    font-size: 2.5rem;
+  }
+
+  .skills .content li {
+    font-size: 1.5rem;
+  }
+  .skills .content li::after {
+    margin-left: 8em;
+  }
+  .skills .content .code-dos::after {
+    left: 9.5rem;
+  }
+}
 @media screen and (min-width: 522px) {
   header .logo_externo {
     width: 8.5rem;
@@ -1044,12 +1098,11 @@ footer p a {
   position: fixed;
   width: 3rem;
   height: 3rem;
-  right: 4rem;
-  bottom: 4rem;
+  right: 1rem;
+  bottom: 1rem;
 }
 .btn-top button {
   color: white;
-  padding: 2rem;
   width: 1.5rem;
   height: 1.5rem;
   background-color: transparent;

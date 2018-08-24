@@ -1,18 +1,22 @@
 main{
     overflow: hidden;
 }
-section{
+*section{
     width: 100%;
     height: auto;
     transition: all 0.4s ease 0s;/* REVISAR******* */
     opacity: 1;
     transform: scale(1);
+    transform: translatey(0) 
 }
 .about{
-    transform: scale(0.8);
+    transform: scale(1.2);
     transition: all 0.4s ease 0s;
-    opacity: 0;
-}/* REVISAR********************* */
+    opacity: 0; 
+    transform: translatey(-5rem);
+/* REVISAR********************* */
+}
+
 .header{
     width: 100%;
     height: 20vh;
@@ -31,7 +35,7 @@ section{
         width: 100%;
         font-family: $title1;
         font-weight: 800;
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: $cleanWhite;
         text-transform: uppercase;
         @include vCenter;

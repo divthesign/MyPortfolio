@@ -37,13 +37,13 @@
                 @include codeSimulation;
                 text-transform: lowercase;
                 position: absolute;
-                left: 6.5rem;
+                left: 5rem;
                 bottom: 1rem; 
             }
         }
         li{
             font-family: $title1;
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: 800;
             text-transform: uppercase;
             padding-bottom: 2rem;
@@ -56,7 +56,7 @@
                 background-color: $strongPink;
                 position: absolute;
                 left: 10%;
-                margin-left: 7.2rem;
+                margin-left: 6rem;
                 box-shadow: 25px 0 $strongPink,
                             50px 0 $navGrey,
                             75px 0 $navGrey,

@@ -105,7 +105,7 @@ header{
         font-family: $title1;
         font-weight: 800;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 2rem;
         &:hover{
             color: $cleanWhite;
         }
@@ -130,8 +130,8 @@ header{
         @include vCenter;
     }
     .logo_externo{
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 4.2rem;
+        height: 4.2rem;
         background: linear-gradient(to right, $strongPink, $lightTurquoise); 
         @include vCenter;
         &::before{
@@ -162,7 +162,7 @@ header{
         font-family: $title1;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 3.8rem;
+        font-size: 3rem;
         text-align: center;
         position: relative;
         z-index: 10;

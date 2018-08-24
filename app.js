@@ -8,6 +8,7 @@ class App{
         /* abrir cajas del portfolio REVISAR!!!!!!! */
         this.btnAbrirPort = document.querySelector('.btn_mas')
         this.cajasPort = document.querySelector('.hidden')
+        
 
         /* botón arriba */
         this.btnTop = document.querySelector('#btn-top')
@@ -26,10 +27,12 @@ class App{
         /* botón arriba */
         document.addEventListener('scroll',
             this.scrollDetect.bind(this))
-            this.btnTop.addEventListener('click', this.subir.bind(this))  
-            
-        window.addEventListener('scroll', this.scrollSection.bind(this))
-    }
+            this.btnTop.addEventListener('click', this.subir.bind(this))
+
+        /* scroll fade down1 */    
+        window.addEventListener('scroll', this.scrollSection1.bind(this)) 
+
+    } 
 
     /* abrir menu mobile */
     mostrarMenu(){
@@ -63,18 +66,18 @@ class App{
         })
     }
 
-    scrollSection(){
+     /* scroll fade down1 */ 
+    scrollSection1(){
         this.header = document.querySelector('header')
         this.scrollSection = document.querySelector('section')
         console.log(this.scrollSection)
         this.ypos = window.pageYOffset
-        if (this.ypos > 287) {
+        if (this.ypos > 187) {
             this.scrollSection.classList.remove('about')
         }else{
-            /* this.scrollSection.style.height = "70px" */
             this.scrollSection.classList.add('about')
         }
-    }
+    } 
 }
 
 document.addEventListener('DOMContentLoaded', () => { new App()})

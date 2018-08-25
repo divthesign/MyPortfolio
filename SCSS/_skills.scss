@@ -1,7 +1,7 @@
 .skills{
     height: auto;
     .header{
-        background-color: $bckgSobreMi;
+        background-color: $strongPink;
         position: relative;
         .num-svg{
             background-image: url('../assets/skillsBlancoSvg.svg');
@@ -11,7 +11,7 @@
         }
     }
     .content{
-        background: $cleanWhite;
+        background: $bckgGrey;
         padding-top: 3rem;
         padding-left: .5rem;
         .lista_skills{
@@ -32,14 +32,57 @@
         }
         .code-dos{
             position: relative;
-            &::after{
+            &::before{
                 content:"</ul>";
                 @include codeSimulation;
                 text-transform: lowercase;
                 position: absolute;
-                left: 5rem;
-                bottom: 1rem; 
+                left: 0;
+                bottom: 1rem;                 
             }
+            .nth8::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $navGrey,
+                            100px 0 $navGrey;
+            }
+            .nth9::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $navGrey;
+            }
+            .nth10::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            }
+            .nth11::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $navGrey,
+                            100px 0 $navGrey;
+            }
+            .nth12::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $navGrey;
+            }
+            .nth13::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            }
+            .nth14::after{
+                box-shadow: 25px 0 $strongPink,
+                            50px 0 $strongPink,
+                            75px 0 $strongPink,
+                            100px 0 $strongPink;
+            }
+            
         }
         li{
             font-family: $title1;
@@ -58,7 +101,7 @@
                 left: 10%;
                 margin-left: 6rem;
                 box-shadow: 25px 0 $strongPink,
-                            50px 0 $navGrey,
+                            50px 0 $strongPink,
                             75px 0 $navGrey,
                             100px 0 $navGrey;
             }
@@ -86,54 +129,6 @@
                             75px 0 $strongPink,
                             100px 0 $strongPink;
             }
-            &:nth-child(6)::after{
-                box-shadow: 25px 0 $strongPink,
-                            50px 0 $strongPink,
-                            75px 0 $navGrey,
-                            100px 0 $navGrey;
-            }
-            &:nth-child(7)::after{
-                box-shadow: 25px 0 $strongPink,
-                            50px 0 $strongPink,
-                            75px 0 $navGrey,
-                            100px 0 $navGrey;
-            }
-            &:nth-child(8)::after{
-                box-shadow: 25px 0 $strongPink,
-                            50px 0 $navGrey,
-                            75px 0 $navGrey,
-                            100px 0 $navGrey;
-            }
-            &:nth-child(9)::after{
-                box-shadow: 25px 0 $strongPink,
-                            50px 0 $strongPink,
-                            75px 0 $strongPink,
-                            100px 0 $navGrey;
-            }
-            &:nth-child(10)::after{
-                box-shadow: 25px 0 $strongPink,
-                            50px 0 $strongPink,
-                            75px 0 $strongPink,
-                            100px 0 $strongPink;
-            } 
-            &:nth-child(12)::after{
-                box-shadow: 25px 0 $strongPink,
-                            50px 0 $strongPink,
-                            75px 0 $strongPink,
-                            100px 0 $navGrey;
-            }
-            &:nth-child(13)::after{
-                box-shadow: 25px 0 $strongPink,
-                            50px 0 $strongPink,
-                            75px 0 $strongPink,
-                            100px 0 $strongPink;
-            }
-            &:nth-child(14)::after{
-                box-shadow: 25px 0 $strongPink,
-                            50px 0 $strongPink,
-                            75px 0 $strongPink,
-                            100px 0 $strongPink;
-            }                           
         }
     }
     .software{

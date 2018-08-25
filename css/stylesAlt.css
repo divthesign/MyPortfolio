@@ -353,7 +353,7 @@ main {
 .header {
   width: 100%;
   height: 20vh;
-  background: #252627;
+  background: rgba(25, 204, 170, 0.95);
   position: relative;
 }
 .header .num-svg {
@@ -381,7 +381,7 @@ main {
 
 .content {
   width: 100%;
-  background: rgba(37, 38, 39, 0.95);
+  background: rgba(37, 38, 39, 0.88);
   position: relative;
   top: 0;
   padding-bottom: 3rem;
@@ -392,7 +392,7 @@ main {
   z-index: -10;
 }
 .content .image_about img {
-  width: 100%;
+  /* width: 100%; */
   position: absolute;
   top: 0;
   right: 0;
@@ -414,7 +414,7 @@ main {
 .content .circles {
   width: 7rem;
   height: 7rem;
-  background: #19ccaa;
+  background: #43fbd6;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -432,7 +432,7 @@ main {
   content: "";
   width: 1%;
   height: 30%;
-  background: #19ccaa;
+  background: #d1d1d1;
   position: absolute;
   top: 100%;
 }
@@ -448,7 +448,7 @@ main {
   content: "";
   width: 1%;
   height: 30%;
-  background: #19ccaa;
+  background: #d1d1d1;
   position: absolute;
   top: 100%;
 }
@@ -499,7 +499,7 @@ main {
   font-family: "Montserrat";
   font-weight: lighter;
   font-size: 1.5rem;
-  color: #fc0853;
+  color: #d80f4d;
 }
 .content p {
   margin-top: 1rem;
@@ -571,7 +571,7 @@ main {
   height: auto;
 }
 .port .header {
-  background: #252627;
+  background: #29a6b7;
 }
 .port .header .num-svg {
   background-image: url("../assets/portfolioSvg.svg");
@@ -619,7 +619,7 @@ main {
   text-transform: uppercase;
 }
 .port .container_port p {
-  color: #fc0853;
+  color: black;
   margin-top: 0.5em;
   font-weight: 700;
   font-size: 1rem;
@@ -727,7 +727,7 @@ main {
   height: auto;
 }
 .skills .header {
-  background-color: #fc0853;
+  background-color: #f90d53;
   position: relative;
 }
 .skills .header .num-svg {
@@ -763,36 +763,15 @@ main {
 .skills .content .code-dos {
   position: relative;
 }
-.skills .content .code-dos::before {
+.skills .content .code-dos::after {
   content: "</ul>";
   font-family: "Damion";
   font-size: 0.8rem;
   color: #5e5e5e;
   text-transform: lowercase;
   position: absolute;
-  left: 0;
+  left: 5rem;
   bottom: 1rem;
-}
-.skills .content .code-dos .nth8::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
-}
-.skills .content .code-dos .nth9::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
-}
-.skills .content .code-dos .nth10::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
-}
-.skills .content .code-dos .nth11::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
-}
-.skills .content .code-dos .nth12::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
-}
-.skills .content .code-dos .nth13::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
-}
-.skills .content .code-dos .nth14::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
 }
 .skills .content li {
   font-family: "Montserrat";
@@ -811,7 +790,7 @@ main {
   position: absolute;
   left: 10%;
   margin-left: 6rem;
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+  box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
 }
 .skills .content li:nth-child(1)::after {
   box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
@@ -823,6 +802,30 @@ main {
   box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
 }
 .skills .content li:nth-child(4)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(6)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(7)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(8)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(9)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+.skills .content li:nth-child(10)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(12)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+.skills .content li:nth-child(13)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(14)::after {
   box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
 }
 .skills .software {
@@ -1034,7 +1037,7 @@ footer p a {
   }
 
   .skills .content {
-    padding-left: 15%;
+    padding-left: 4.5rem;
   }
   .skills .content li {
     font-size: 2rem;
@@ -1073,6 +1076,7 @@ footer p a {
   .header {
     width: 20%;
     height: auto;
+    background-color: #252627;
   }
   .header .num-svg {
     width: 12rem;
@@ -1086,15 +1090,15 @@ footer p a {
     top: 30rem;
   }
 
+  .port .header {
+    background: #252627;
+  }
   .port h2 {
     top: 30rem;
   }
 
   .skills h2 {
     top: 26rem;
-  }
-  .skills .content {
-    padding-left: 2%;
   }
   .skills .content .lista_skills1 {
     display: flex;

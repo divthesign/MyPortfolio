@@ -2,14 +2,14 @@
     width: 100%;
     height: auto;  
     .header{
-        background: $lightBlue;
+        background: $bckgGrey;
         .num-svg{
             background-image: url('../assets/portfolioSvg.svg')
         }
     }
     .content{
         padding-top: 3rem;
-        background: $lightBlue;
+        background: $bckgGrey;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -47,7 +47,7 @@
             text-transform: uppercase;
         }
         p{
-            color: $plainBlack;
+            color: $strongPink;
             margin-top: 0.5em;
             font-weight: 700;
             font-size: 1rem;

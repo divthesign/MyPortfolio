@@ -148,7 +148,7 @@
     }
     .skills{
         .content{
-            padding-left: 4.5rem;
+            padding-left: 15%;
             li{
             font-size: 2rem;
                 &::after{
@@ -195,7 +195,6 @@
     .header{
         width: 20%;
         height: auto;
-        background-color: $sobreMiBigHeader;
         .num-svg{
             width: 12rem;
             height: 12rem;
@@ -210,9 +209,6 @@
         }
     }
     .port{
-        .header{
-            background: $portBigHeader;
-        }
         h2{
             top: 30rem;
         }
@@ -226,6 +222,7 @@
             top: 26rem;
         }
         .content{
+            padding-left: 2%;
             .lista_skills1{
                 display: flex;
             }

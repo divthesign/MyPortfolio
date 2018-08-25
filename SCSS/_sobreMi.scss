@@ -20,7 +20,7 @@ main{
 .header{
     width: 100%;
     height: 20vh;
-    background: rgba(25, 204, 170, 0.95);
+    background: $bckgGrey;
     position: relative;
     .num-svg{
         margin-top: 1rem;
@@ -44,7 +44,7 @@ main{
 } 
 .content{
     width: 100%;
-    background: rgba(25, 204, 170, 0.95);
+    background: rgba(37, 38, 39, 0.95);
     position: relative;
     top: 0;
     padding-bottom: 3rem;
@@ -74,7 +74,7 @@ main{
     .circles{
         width: 7rem;
         height: 7rem;
-        background: #d1d1d1;
+        background: $bckgSobreMi;
         border-radius: 50%;
         @include xCenter;
         margin-bottom: 2rem;
@@ -90,7 +90,7 @@ main{
             content: '';
             width: 1%;
             height: 30%;
-            background: #d1d1d1;
+            background: $bckgSobreMi;
             position: absolute;
             top: 100%;
         }    
@@ -106,7 +106,7 @@ main{
             content: '';
             width: 1%;
             height: 30%;
-            background: #d1d1d1;
+            background: $bckgSobreMi;
             position: absolute;
             top: 100%;
         }
@@ -158,6 +158,7 @@ main{
         font-family: $title1;
         font-weight: lighter;
         font-size: 1.5rem;
+        color: $strongPink;
     }
     p{
         margin-top: 1rem;

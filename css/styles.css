@@ -904,8 +904,7 @@ footer .git a {
   transition: all 0.3s ease-in;
 }
 footer .git a:hover {
-  text-shadow: 70px 1px 2px white, -70px 1px 2px white, 1px 1px 40px white;
-  color: #fc0853;
+  color: #13ba9a;
 }
 footer p {
   color: white;

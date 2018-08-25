@@ -15,8 +15,7 @@ class App{
         this.divTop = document.querySelector('#div-top')
         this.header = document.querySelector('header')
         this.h1Header = document.querySelector('header h1')
-        this.bajoHeader = document.querySelector('#bajo-header')
-        
+        this.bajoHeader = document.querySelector('#bajo-header')       
         
         /* abrir menu mobile */
         this.btnAbrirMenu.addEventListener('click', this.mostrarMenu.bind(this))

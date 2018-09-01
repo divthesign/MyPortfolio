@@ -43,6 +43,20 @@
         }
     }
 }
+/* REVISAR */
+@media screen and(height: 360px){
+    header{
+        nav{
+            height: 100vh;
+            padding-top: 0;
+            font-size: 1rem;
+        }
+        .text_menu{
+            margin-top: 1rem;
+        }
+    }
+}
+/* ********* */
 
 @media screen and(min-width: 375px){
     header{

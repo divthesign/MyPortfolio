@@ -15,7 +15,12 @@ class App{
         this.divTop = document.querySelector('#div-top')
         this.header = document.querySelector('header')
         this.h1Header = document.querySelector('header h1')
-        this.bajoHeader = document.querySelector('#bajo-header')       
+        this.bajoHeader = document.querySelector('#bajo-header') 
+
+        this.btnContacto = document.querySelector('#btn-contacto')
+
+        
+        
         
         /* abrir menu mobile */
         this.btnAbrirMenu.addEventListener('click', this.mostrarMenu.bind(this))
@@ -31,7 +36,14 @@ class App{
         /* scroll fade down1 */    
         window.addEventListener('scroll', this.scrollSection1.bind(this)) 
 
+        this.btnContacto.addEventListener('click', this.contacto.bind(this))
+
+        
+
     } 
+
+
+
 
     /* abrir menu mobile */
     mostrarMenu(){
@@ -76,7 +88,11 @@ class App{
         }else{
             this.scrollSection.classList.add('about')
         }
-    } 
+    }
+    
+    contacto(){
+        this.sectionContacto = document.querySelector('#contactame', location.assign ('#contactame'))
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => { new App()})

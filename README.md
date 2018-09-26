@@ -1,7 +1,7 @@
 # Div Thesign
-##My Personal Portfolio
+## My Personal Portfolio
 
-###Hi everyone! 
+### Hi everyone! 
 
 welcome to my personal portfolio on GitHub, click the link below 
 for watching.

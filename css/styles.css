@@ -1072,3 +1072,42 @@ footer p a{
 .hide-scroll{
   display:none
 }
+
+/* fade */
+/* .content__top, .content__title, .content__link, .content__copy {
+  margin-bottom: 0;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.content__title {
+  margin-top: 0;
+}
+.content__link {
+  color: black;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.fade .content__top,
+.fade .content__title,
+.fade .content__copy,
+.fade .content__link {
+  transition: all 1s ease;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  opacity: 1;
+}
+.fade .content__top {
+  transition-delay: 0s;
+}
+.fade .content__title,
+.fade .content__copy {
+  transition-delay: 0.2s;
+}
+.fade .content__link {
+  transition-delay: 0.6s;
+} */
+
+/*# sourceMappingURL=css/styles3.css.map */

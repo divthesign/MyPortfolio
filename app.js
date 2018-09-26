@@ -79,6 +79,8 @@ class Contacto {
         this.sectionContacto = document.querySelector('#contactame', location.assign('#contactame'))
     }
 }
+
+  
 document.addEventListener('DOMContentLoaded', () => {
     new Menu(), new Portfolio(), new Arriba(), new FadeDown, new Contacto
 })

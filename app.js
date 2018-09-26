@@ -54,7 +54,7 @@ class Arriba {
         })
     }
 }
-class FadeDown {
+class FadeDownUno {
     constructor() {
         window.addEventListener('scroll', this.scrollSection1.bind(this))
     };
@@ -64,6 +64,38 @@ class FadeDown {
         console.log(this.scrollSection);
         this.ypos = window.pageYOffset;
         if (this.ypos > 187) {
+            this.scrollSection.classList.remove('about')
+        } else {
+            this.scrollSection.classList.add('about')
+        }
+    }
+}
+class FadeDownDos {
+    constructor() {
+        window.addEventListener('scroll', this.scrollSection1.bind(this))
+    };
+    scrollSection1() {
+        this.header = document.querySelector('header');
+        this.scrollSection = document.querySelector('.port');
+        console.log(this.scrollSection);
+        this.ypos = window.pageYOffset;
+        if (this.ypos > 1387) {
+            this.scrollSection.classList.remove('about')
+        } else {
+            this.scrollSection.classList.add('about')
+        }
+    }
+}
+class FadeDownTres {
+    constructor() {
+        window.addEventListener('scroll', this.scrollSection1.bind(this))
+    };
+    scrollSection1() {
+        this.header = document.querySelector('header');
+        this.scrollSection = document.querySelector('.skills');
+        console.log(this.scrollSection);
+        this.ypos = window.pageYOffset;
+        if (this.ypos > 3087) {
             this.scrollSection.classList.remove('about')
         } else {
             this.scrollSection.classList.add('about')
@@ -82,5 +114,5 @@ class Contacto {
 
   
 document.addEventListener('DOMContentLoaded', () => {
-    new Menu(), new Portfolio(), new Arriba(), new FadeDown, new Contacto
+    new Menu(), new Portfolio(), new Arriba(), new FadeDownUno(), new Contacto(), new FadeDownDos(), new FadeDownTres
 })

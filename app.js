@@ -79,7 +79,7 @@ class FadeDownDos {
         this.scrollSection = document.querySelector('.port');
         console.log(this.scrollSection);
         this.ypos = window.pageYOffset;
-        if (this.ypos > 1387) {
+        if (this.ypos > 1437) {
             this.scrollSection.classList.remove('about')
         } else {
             this.scrollSection.classList.add('about')
@@ -92,10 +92,10 @@ class FadeDownTres {
     };
     scrollSection1() {
         this.header = document.querySelector('header');
-        this.scrollSection = document.querySelector('.skills');
+        this.scrollSection = document.querySelector('#skills');
         console.log(this.scrollSection);
         this.ypos = window.pageYOffset;
-        if (this.ypos > 3087) {
+        if (this.ypos > 2900) {
             this.scrollSection.classList.remove('about')
         } else {
             this.scrollSection.classList.add('about')

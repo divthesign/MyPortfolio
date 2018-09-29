@@ -1,60 +1,74 @@
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-img {
-  max-width: 100%;
-  max-width: 800px;
-}
-
-.container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-.content__top {
-  text-transform: capitalize;
-}
-.content__top, .content__title, .content__link, .content__copy {
-  margin-bottom: 0;
-  -webkit-transform: translate3d(0, 30px, 0);
-  transform: translate3d(0, 30px, 0);
-  opacity: 0;
-  transition: all 1s ease;
-}
-.content__title {
-  margin-top: 0;
-}
-.content__link {
-  color: black;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.fade .content__top,
-.fade .content__title,
-.fade .content__copy,
-.fade .content__link {
-  transition: all 1s ease;
-  -webkit-transform: translateZ(0px);
-  transform: translateZ(0px);
-  opacity: 1;
-}
-.fade .content__top {
-  transition-delay: 0s;
-}
-.fade .content__title,
-.fade .content__copy {
-  transition-delay: 0.2s;
-}
-.fade .content__link {
-  transition-delay: 0.6s;
-}
+/* body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    max-width: 800px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .content {
+    text-align: center;
+  
+    padding-top: 20px;
+    padding-bottom: 40px;
+  
+    &__top {
+      text-transform: capitalize;
+    }
+  
+    &__top,
+    &__title,
+    &__link,
+    &__copy {
+      margin-bottom: 0;
+      -webkit-transform: translate3d(0, 30px, 0);
+      transform: translate3d(0, 30px, 0);
+      opacity: 0;
+      transition: all 1s ease;
+    }
+  
+    &__title {
+      margin-top: 0;
+    }
+  
+    &__link {
+      color: black;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+  
+  .fade {
+    .content__top,
+    .content__title,
+    .content__copy,
+    .content__link {
+      transition: all 1s ease;
+      -webkit-transform: translateZ(0px);
+      transform: translateZ(0px);
+      opacity: 1;
+    }
+  
+    .content__top {
+      transition-delay: 0s;
+    }
+  
+    .content__title,
+    .content__copy {
+      transition-delay: 0.2s;
+    }
+  
+    .content__link {
+      transition-delay: 0.6s;
+    }
+  }
+   */
 
 /*# sourceMappingURL=css/fadeUp.css.map */

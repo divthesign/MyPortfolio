@@ -95,7 +95,7 @@ class FadeDownTres {
         this.scrollSection = document.querySelector('#skills');
         console.log(this.scrollSection);
         this.ypos = window.pageYOffset;
-        if (this.ypos > 2900) {
+        if (this.ypos > 3120) {
             this.scrollSection.classList.remove('about')
         } else {
             this.scrollSection.classList.add('about')

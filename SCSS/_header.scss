@@ -133,7 +133,19 @@ header{
         width: 4.2rem;
         height: 4.2rem;
         background: linear-gradient(to right, $strongPink, $lightTurquoise); 
+        /* animation: shinning 10s ease infinite; */
         @include vCenter;
+        /* @keyframes shinning{
+            0%{
+                background: linear-gradient(to right, $strongPink, $lightTurquoise); 
+            }
+            50%{
+                background: linear-gradient(to right, $strongPink, $shinnigLogo); 
+            }
+            100%{
+                background: linear-gradient(to right, $strongPink, $lightTurquoise); 
+            }
+        } */
         &::before{
             content: '<div>';
             @include codeSimulation; 

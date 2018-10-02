@@ -564,6 +564,7 @@ main {
   text-transform: uppercase;
   outline: inherit;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 .content button:hover {
   background: none;
@@ -613,7 +614,6 @@ main {
   overflow: hidden;
   /* background-image: url('../');
   background-size: cover; */
-  /* REVISRAREVIISARREVISARREVISAR********** */
 }
 .port .container_port:hover .marco {
   bottom: 0%;
@@ -644,12 +644,6 @@ main {
   position: absolute;
   bottom: -50%;
   transition: all 0.2s ease;
-}
-.port .container_port .img-port {
-  /* width: 100%;
-  height: 100%;
-  background-image: url('../assets/fotoAboutGradients.jpg');
-  background-size: cover; */
 }
 .port .container_port .marco_hover {
   width: 100%;
@@ -798,7 +792,7 @@ main {
   bottom: 1rem;
 }
 .skills .content .code-dos .nth8::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+  box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
 }
 .skills .content .code-dos .nth9::after {
   box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
@@ -807,7 +801,7 @@ main {
   box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
 }
 .skills .content .code-dos .nth11::after {
-  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+  box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
 }
 .skills .content .code-dos .nth12::after {
   box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;

@@ -205,6 +205,7 @@ main{
         text-transform: uppercase;
         outline: inherit;
         cursor: pointer;
+        transition: all 0.4s ease;
         &:hover{
             background: none;
             border: 2px solid $cleanWhite;

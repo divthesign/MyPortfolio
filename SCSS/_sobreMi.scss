@@ -215,11 +215,12 @@ main{
             &::after{
                 content: "Download my cv";
                 font-size: 1rem;
+                color: $bckgSobreMi;
                 position: absolute;
                 left: 0;
                 top: 0;
                 opacity: 0;
-                animation: movement 0.4s ease;
+                animation: movement 0.8s ease;
             }
             &:hover::after{
                 @keyframes movement{
@@ -228,7 +229,7 @@ main{
                         opacity: 1;
                     }
                     100%{
-                        top: 4rem;
+                        top: 9rem;
                         opacity: 0;
                     }
                 }

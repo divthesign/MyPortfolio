@@ -564,6 +564,7 @@ main {
   text-transform: uppercase;
   outline: inherit;
   cursor: pointer;
+  position: relative;
   transition: all 0.4s ease;
 }
 .content button:hover {
@@ -571,6 +572,25 @@ main {
   border: 2px solid white;
   color: white;
   border-radius: 50px;
+}
+.content button:hover::after {
+  content: "Download my cv";
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  animation: movement 0.4s ease;
+}
+@keyframes movement {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 4rem;
+    opacity: 0;
+  }
 }
 .content .datos-contacto {
   width: 100%;

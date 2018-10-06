@@ -53,6 +53,7 @@ class Portfolio {
             item.classList.toggle('hidden')
         })
     }
+    
 }
 new Portfolio()
 class Arriba {

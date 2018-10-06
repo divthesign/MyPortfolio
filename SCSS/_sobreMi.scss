@@ -191,23 +191,10 @@ main{
         @include vCenter;
         top: 6.5rem;
         padding-top: 1.5rem;
-    }
-    button{
-        margin-top: 1.5rem;
-        margin-bottom: 3rem;
-        width: 8.5rem;
-        padding: 0.5rem 0;
-        background: $cleanWhite;
-        border: none;
-        font-family: $title1;
-        font-weight: 600;
-        font-size: 1rem;
-        text-transform: uppercase;
-        outline: inherit;
-        cursor: pointer;
-        position: relative;
-        transition: all 0.4s ease;
-        &:hover{
+        .btnCv{
+            position: relative;
+            transition: all 0.4s ease;
+            &:hover{
             background: none;
             border: 2px solid $cleanWhite;
             color: $cleanWhite; 
@@ -236,6 +223,23 @@ main{
             }
            
         } 
+        }
+        
+    }
+    button{
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        width: 8.5rem;
+        padding: 0.5rem 0;
+        background: $cleanWhite;
+        border: none;
+        font-family: $title1;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: uppercase;
+        outline: inherit;
+        cursor: pointer;
+      
     }
     .datos-contacto{
         width: 100%;

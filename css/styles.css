@@ -551,29 +551,17 @@ main {
   top: 6.5rem;
   padding-top: 1.5rem;
 }
-.content button {
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
-  width: 8.5rem;
-  padding: 0.5rem 0;
-  background: white;
-  border: none;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 1rem;
-  text-transform: uppercase;
-  outline: inherit;
-  cursor: pointer;
+.content .btn_cv .btnCv {
   position: relative;
   transition: all 0.4s ease;
 }
-.content button:hover {
+.content .btn_cv .btnCv:hover {
   background: none;
   border: 2px solid white;
   color: white;
   border-radius: 50px;
 }
-.content button:hover::after {
+.content .btn_cv .btnCv:hover::after {
   content: "Download my cv";
   font-size: 1rem;
   color: #19ccaa;
@@ -592,6 +580,20 @@ main {
     top: 9rem;
     opacity: 0;
   }
+}
+.content button {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  width: 8.5rem;
+  padding: 0.5rem 0;
+  background: white;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: inherit;
+  cursor: pointer;
 }
 .content .datos-contacto {
   width: 100%;
@@ -684,6 +686,9 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.port .container_port .extra {
+  width: 100%;
+}
 .port .container_port .work {
   /* padding-top: 4rem;  a parti de la mQ 1*/
   display: flex;
@@ -726,7 +731,7 @@ main {
   background: #252627;
   text-align: center;
 }
-.port .ver_mas button {
+.port .ver_mas .btn_mas {
   color: white;
   font-size: 3rem;
   font-weight: 400;
@@ -735,18 +740,17 @@ main {
   margin-top: 0;
   transition: all 0.2s linear;
 }
-.port .ver_mas button:hover {
+.port .ver_mas .btn_mas:hover {
   transform: rotateZ(45deg);
   background: none;
 }
-.port .ver_mas .btn_mas {
+.port .ver_mas .btn_menos {
   background: none;
   font-size: 3rem;
   font-weight: 400;
-  transform: rotate(90deg);
   transition: all 0.2s linear;
 }
-.port .ver_mas .btn_mas:hover {
+.port .ver_mas .btn_menos:hover {
   background: none;
 }
 .port .hidden {

@@ -70,6 +70,9 @@
         .container_tit_btn{
             @include vCenter;
         }
+        .extra{
+            width: 100%;
+        }
         .work{
             /* padding-top: 4rem;  a parti de la mQ 1*/
             display: flex;
@@ -113,7 +116,7 @@
     .ver_mas{
         background: $bckgGrey;
         text-align: $textCenter;
-        button{
+        .btn_mas{
             color: $cleanWhite;
             font-size: 3rem;
             font-weight: 400;
@@ -126,11 +129,10 @@
                 background: none;
             }
         }
-        .btn_mas{
+        .btn_menos{
             background: none;
             font-size: 3rem;
             font-weight: 400;
-            transform: rotate(90deg);
             transition: all .2s linear;
             &:hover{
                 background: none;
@@ -138,7 +140,7 @@
         }
         } 
     .hidden{
-        display: none;
+        display: none;   
 
     }
     .cajas{

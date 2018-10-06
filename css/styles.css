@@ -741,7 +741,7 @@ main {
   transition: all 0.2s linear;
 }
 .port .ver_mas .btn_mas:hover {
-  transform: rotateZ(45deg);
+  transform: rotateZ(90deg);
   background: none;
 }
 .port .ver_mas .btn_menos {

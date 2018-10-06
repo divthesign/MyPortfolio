@@ -570,6 +570,7 @@ main {
   background: none;
   border: 2px solid white;
   color: white;
+  border-radius: 50px;
 }
 .content .datos-contacto {
   width: 100%;
@@ -579,6 +580,9 @@ main {
 .content .datos-contacto a {
   color: white;
   font-family: "Montserrat";
+}
+.content .datos-contacto .tlfn {
+  color: #19ccaa;
 }
 
 .port {

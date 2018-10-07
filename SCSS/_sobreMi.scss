@@ -93,10 +93,9 @@ main{
             background: $bckgSobreMi;
             position: absolute;
             top: 100%;
-        }    
+        } 
     }
     .dos{
-        background-image: url('../assets/dispositivosSvg.svg');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: top;
@@ -112,45 +111,71 @@ main{
         }
         @keyframes dispositivos{
             0%{
-                background-position: top;
-                background-size: 70%;
-            }
-            23%{
-                background-position: top;
-                background-size: 70%;
-            }
-            24%{
+                background-image: url('../assets/Laptop.svg');
+                background-position: center;
                 background-size: 0%;
             }
-            26%{
+            2%{
                 background-position: center;
-                background-size: 80%;
+                background-size: 90%;
             }
-            27%{
-                background-size: 70%;
-            }
-            50%{
+            3%{
                 background-position: center;
                 background-size: 70%;
             }
-            75%{
+            29%{
                 background-position: center;
                 background-size: 70%;
             }
-            76%{
+            30%{
+                background-image: url('../assets/Laptop.svg');
+                background-position: center;
                 background-size: 0%;
             }
-            78%{
-                background-position: bottom;
-                background-size: 80%;
+            31%{
+                background-image: url('../assets/Ipad.svg');
+                background-position: center;
+                background-size: 0%;
             }
-            79%{
-                background-position: bottom;
+            32%{
+                background-image: url('../assets/Ipad.svg');
+                background-position: center;
+                background-size: 90%;
+            }
+            33%{
+                background-image: url('../assets/Ipad.svg');
+                background-position: center;
+                background-size: 70%;
+            }
+            60%{
+                background-image: url('../assets/Ipad.svg');
+                background-position: center;
+                background-size: 70%;
+            }
+            61%{
+                background-image: url('../assets/Mobile.svg');
+                background-position: center;
+                background-size: 0%;
+            }
+            63%{
+                background-image: url('../assets/Mobile.svg');
+                background-position: center;
+                background-size: 90%;
+            }
+            64%{
+                background-image: url('../assets/Mobile.svg');
+                background-position: center;
+                background-size: 70%;
+            }
+            99%{
+                background-image: url('../assets/Mobile.svg');
+                background-position: center;
                 background-size: 70%;
             }
             100%{
-                background-position: bottom;
-                background-size: 70%;
+                background-image: url('../assets/Mobile.svg');
+                background-position: center;
+                background-size: 0%;
             }
         }
     }
@@ -199,30 +224,8 @@ main{
             border: 2px solid $cleanWhite;
             color: $cleanWhite; 
             border-radius: 50px;
-            &::after{
-                content: "Download my cv";
-                font-size: 1rem;
-                color: $bckgSobreMi;
-                position: absolute;
-                left: 0;
-                top: 0;
-                opacity: 0;
-                animation: movement 0.8s ease;
-            }
-            &:hover::after{
-                @keyframes movement{
-                    0%{
-                        top: 0;
-                        opacity: 1;
-                    }
-                    100%{
-                        top: 9rem;
-                        opacity: 0;
-                    }
-                }
-            }
            
-        } 
+            } 
         }
         
     }

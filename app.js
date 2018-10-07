@@ -20,9 +20,11 @@ class CerrarMenu{
         this.linkSkills = document.querySelector('#link-skills')
         this.menuDesp = document.querySelector('.menu-hide');
         this.menuHamOpen = document.querySelector('.change')
+        this.btnContacto = document.querySelector('#btn-contacto')
         this.link.addEventListener('click', this.collapseMenu.bind(this))
         this.linkPort.addEventListener('click', this.collapseMenuDos.bind(this))
         this.linkSkills.addEventListener('click', this.collapseMenuTres.bind(this))
+        this.btnContacto.addEventListener('click', this.collapseMenuCuatro.bind(this))
     }
     collapseMenu(){
         this.menuDesp.classList.toggle('menu-hide')
@@ -38,6 +40,11 @@ class CerrarMenu{
         console.log('collapse do funciona')
         this.menuDesp.classList.toggle('menu-hide')
         this.menuHamOpen.classList.toggle('change')
+        
+    }
+    collapseMenuCuatro(){
+        this.menuDesp.classList.toggle('menu-hide')
+        this.menuHamOpen.classList.toggle('change') 
     }
 }
 new CerrarMenu()
@@ -126,8 +133,8 @@ class FadeDownTres {
         window.addEventListener('scroll', this.scrollSection1.bind(this))
     };
     scrollSection1() {
-        this.header = document.querySelector('header');
-        this.scrollSection = document.querySelector('#skills');
+        this.header = document.querySelector('header')
+        this.scrollSection = document.querySelector('#skills')
         console.log(this.scrollSection);
         this.ypos = window.pageYOffset;
         if (this.ypos > 2687) {
@@ -140,16 +147,14 @@ class FadeDownTres {
 new FadeDownTres
 class Contacto {
     constructor() {
-        this.btnContacto = document.querySelector('#btn-contacto');
+        this.btnContacto = document.querySelector('#btn-contacto')
         this.btnContacto.addEventListener('click', this.contacto.bind(this))
     };
     contacto() {
-        this.sectionContacto = document.querySelector('#contactame', location.assign('#contactame'))
+           this.sectionContacto = document.querySelector('#contactame', location.assign('#contactame'))         
     }
 }
-new Contacto()
-
-  
+new Contacto()  
 document.addEventListener('DOMContentLoaded', () => {
     new Menu()
 })

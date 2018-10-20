@@ -4,10 +4,10 @@
   "description": "Personal Portfolio",
   "main": "index.js",
   "scripts": {
-    "start":"parallelshell \"npm run server\" \"npm run watch\"",
-    "watch":"nodemon -e scss -x \"sass scss:css\"",
-    "server":"http-server",
-    "sass":"sass scss:css",
+    "start": "parallelshell \"npm run server\" \"npm run watch\"",
+    "watch": "nodemon -e scss -x \"sass scss:css\"",
+    "server": "http-server",
+    "sass": "sass scss:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/divthesign/MyPortfolio/issues"
   },
-  "homepage": "https://github.com/divthesign/MyPortfolio#readme"
+  "homepage": "https://github.com/divthesign/MyPortfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "^3.1.0"
+  }
 }

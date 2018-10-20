@@ -1,0 +1,1221 @@
+@charset "UTF-8";
+body {
+  background-color: #252627;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::before, ::after,
+:before, :after {
+  box-sizing: border-box;
+}
+
+/* $shinnigLogo: rgb(90, 151, 142); */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::before, ::after,
+:before, :after {
+  box-sizing: border-box;
+}
+
+/* $shinnigLogo: rgb(90, 151, 142); */
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #252627;
+  transition: all 0.4s ease;
+  /* menu hidden*********** */
+  /* ********** */
+}
+header::before {
+  content: "<body>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: relative;
+  top: 3.5rem;
+  left: 3rem;
+}
+header::after {
+  content: "</body>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: absolute;
+  bottom: 15%;
+  left: 3rem;
+}
+header .abrirMenu {
+  display: inline-block;
+  width: 3rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
+}
+header .abrirMenu .bar1 {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: #fc0853;
+  transform: translate(-1rem);
+  transition: 0.2s ease;
+}
+header .abrirMenu .bar2 {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: #fc0853;
+  margin-top: 1.1rem;
+  transform: translate(1rem);
+  transition: 0.2s ease;
+}
+header .abrirMenu .bar3 {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: #fc0853;
+  margin-top: 2.2rem;
+  transform: translate(-1rem);
+  transition: 0.2s ease;
+}
+header .change .bar1 {
+  transform: translate(0);
+}
+header .change .bar2 {
+  transform: translate(0);
+}
+header .change .bar3 {
+  transform: translate(0);
+}
+header .menu-hide {
+  display: none;
+}
+header nav {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: #434444;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  padding-left: 1rem;
+  padding-top: 3.5rem;
+  animation: entradaMenu 0.4s ease 1;
+}
+@keyframes entradaMenu {
+  0% {
+    opacity: 0;
+    right: 100%;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+header li {
+  padding-top: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+header a:hover {
+  color: white;
+}
+header .text_menu {
+  margin-top: 4rem;
+}
+header .text_menu p {
+  font-family: "Montserrat";
+  font-weight: 100;
+  width: 90%;
+  font-size: 1rem;
+  color: #08fdd8;
+  line-height: 1.6;
+}
+header .text_menu button {
+  margin-top: 1rem;
+  width: 8.5rem;
+  padding: 0.5rem 0;
+  background: #08fdd8;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: inherit;
+  cursor: pointer;
+}
+header .text_menu button:hover {
+  background: white;
+  color: #08fdd8;
+}
+header .titulo {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .logo_externo {
+  width: 4.2rem;
+  height: 4.2rem;
+  background: linear-gradient(to right, #fc0853, #08fdd8);
+  /* animation: shinning 10s ease infinite; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* @keyframes shinning{
+      0%{
+          background: linear-gradient(to right, $strongPink, $lightTurquoise); 
+      }
+      50%{
+          background: linear-gradient(to right, $strongPink, $shinnigLogo); 
+      }
+      100%{
+          background: linear-gradient(to right, $strongPink, $lightTurquoise); 
+      }
+  } */
+}
+header .logo_externo::before {
+  content: "<div>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: absolute;
+  top: -0.5rem;
+  left: -2.5rem;
+}
+header .logo_externo::after {
+  content: "</div>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 105%;
+}
+header .logo_externo .logo_interno {
+  width: 97%;
+  height: 97%;
+  background: linear-gradient(to right, #fc0853, #252627);
+  position: relative;
+  top: 1.5%;
+  left: 1.5%;
+  /* &::after{
+      content: "By Daniel Verdú";
+      position: absolute;
+      top: 105%;
+      font-size: 1rem;
+  } */
+}
+header h1 {
+  color: white;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+header span {
+  font-family: "Damion";
+  text-transform: capitalize;
+}
+header .sub_heading {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: lighter;
+  font-size: 0.8rem;
+  color: white;
+  position: absolute;
+  top: 155%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  overflow: hidden;
+}
+
+* section {
+  width: 100%;
+  height: auto;
+  transition: all 0.4s ease 0s;
+  /* REVISAR******* */
+  opacity: 1;
+  transform: scale(1);
+  transform: translatey(0);
+}
+
+.about {
+  transform: scale(1.2);
+  transition: all 0.4s ease 0s;
+  opacity: 0;
+  transform: translatey(-5rem);
+  /* REVISAR********************* */
+}
+
+.header {
+  width: 100%;
+  height: 20vh;
+  background: #252627;
+  position: relative;
+}
+.header .num-svg {
+  margin-top: 1rem;
+  width: 70%;
+  height: 70%;
+  background-image: url("../assets/aboutSvg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.header h2 {
+  width: 100%;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  background: rgba(37, 38, 39, 0.95);
+  position: relative;
+  top: 0;
+  padding-bottom: 3rem;
+}
+.content .image_about {
+  width: 100%;
+  position: relative;
+  z-index: -10;
+}
+.content .image_about img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.content .container-about {
+  padding-top: 4rem;
+  width: 90%;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content .box {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.content .circles {
+  width: 7rem;
+  height: 7rem;
+  background: #19ccaa;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.content .uno {
+  background-image: url("../assets/yoSvg.svg");
+  background-size: 85;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  animation: perfil 10s ease-in-out infinite;
+}
+.content .uno::after {
+  content: "";
+  width: 1%;
+  height: 30%;
+  background: #19ccaa;
+  position: absolute;
+  top: 100%;
+}
+.content .dos {
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  animation: dispositivos 15s ease-in-out infinite;
+}
+.content .dos::after {
+  content: "";
+  width: 1%;
+  height: 30%;
+  background: #19ccaa;
+  position: absolute;
+  top: 100%;
+}
+@keyframes dispositivos {
+  0% {
+    background-image: url("../assets/Laptop.svg");
+    background-position: center;
+    background-size: 0%;
+  }
+  2% {
+    background-position: center;
+    background-size: 90%;
+  }
+  3% {
+    background-position: center;
+    background-size: 70%;
+  }
+  29% {
+    background-position: center;
+    background-size: 70%;
+  }
+  30% {
+    background-image: url("../assets/Laptop.svg");
+    background-position: center;
+    background-size: 0%;
+  }
+  31% {
+    background-image: url("../assets/Ipad.svg");
+    background-position: center;
+    background-size: 0%;
+  }
+  32% {
+    background-image: url("../assets/Ipad.svg");
+    background-position: center;
+    background-size: 90%;
+  }
+  33% {
+    background-image: url("../assets/Ipad.svg");
+    background-position: center;
+    background-size: 70%;
+  }
+  60% {
+    background-image: url("../assets/Ipad.svg");
+    background-position: center;
+    background-size: 70%;
+  }
+  61% {
+    background-image: url("../assets/Mobile.svg");
+    background-position: center;
+    background-size: 0%;
+  }
+  63% {
+    background-image: url("../assets/Mobile.svg");
+    background-position: center;
+    background-size: 90%;
+  }
+  64% {
+    background-image: url("../assets/Mobile.svg");
+    background-position: center;
+    background-size: 70%;
+  }
+  99% {
+    background-image: url("../assets/Mobile.svg");
+    background-position: center;
+    background-size: 70%;
+  }
+  100% {
+    background-image: url("../assets/Mobile.svg");
+    background-position: center;
+    background-size: 0%;
+  }
+}
+.content h3 {
+  font-family: "Montserrat";
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: #fc0853;
+}
+.content p {
+  margin-top: 1rem;
+  padding: 0 0.5rem 0 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  font-weight: 100;
+  line-height: 1.7;
+}
+.content p::first-line {
+  line-height: 1;
+}
+.content .container-contacto {
+  width: 90%;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 1rem 0 2rem 0;
+  border-top: 1px solid white;
+}
+.content .contenido {
+  padding-bottom: 3rem;
+}
+.content .text_cv {
+  text-align: center;
+}
+.content .btn_cv {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 6.5rem;
+  padding-top: 1.5rem;
+}
+.content .btn_cv .btnCv {
+  position: relative;
+  transition: all 0.4s ease;
+}
+.content .btn_cv .btnCv:hover {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50px;
+}
+.content button {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  width: 8.5rem;
+  padding: 0.5rem 0;
+  background: white;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: inherit;
+  cursor: pointer;
+}
+.content .datos-contacto {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.content .datos-contacto a {
+  color: white;
+  font-family: "Montserrat";
+}
+.content .datos-contacto .tlfn {
+  color: #19ccaa;
+}
+
+.port {
+  width: 100%;
+  height: auto;
+}
+.port .header {
+  background: #252627;
+}
+.port .header .num-svg {
+  background-image: url("../assets/portfolioSvg.svg");
+}
+.port .content {
+  padding-top: 3rem;
+  background: #252627;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.port .flex-item {
+  flex: 100%;
+  max-width: 100%;
+}
+.port .container_port {
+  width: 98%;
+  /* height: 16rem; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 1%;
+  /* margin-bottom: 3px; */
+  position: relative;
+  overflow: hidden;
+  /* background-image: url('../');
+  background-size: cover; */
+}
+.port .container_port:hover .marco {
+  bottom: 0%;
+}
+.port .container_port .titulo_container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.port .container_port h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.port .container_port p {
+  color: #fc0853;
+  margin-top: 0.5em;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.port .container_port .marco {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: -50%;
+  transition: all 0.2s ease;
+}
+.port .container_port .marco_hover {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0;
+}
+.port .container_port .container_tit_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.port .container_port .extra {
+  width: 100%;
+}
+.port .container_port .work {
+  /* padding-top: 4rem;  a parti de la mQ 1*/
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 1000;
+}
+.port .container_port .work p {
+  color: #19ccaa;
+  opacity: 1;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.port .container_port .btn {
+  text-align: center;
+}
+.port .container_port button {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  width: 8.5rem;
+  padding: 0.5rem 0;
+  background: #19ccaa;
+  color: white;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: inherit;
+  position: relative;
+  z-index: 1000;
+}
+.port .container_port button:hover {
+  background: white;
+  color: #19ccaa;
+}
+.port .ver_mas {
+  background: #252627;
+  text-align: center;
+}
+.port .ver_mas .btn_mas {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Montserrat";
+  background: transparent;
+  margin-top: 0;
+  transition: all 0.2s linear;
+}
+.port .ver_mas .btn_mas:hover {
+  transform: rotateZ(90deg);
+  background: none;
+}
+.port .ver_mas .btn_menos {
+  background: none;
+  font-size: 3rem;
+  font-weight: 400;
+  transition: all 0.2s linear;
+}
+.port .ver_mas .btn_menos:hover {
+  background: none;
+}
+.port .hidden {
+  display: none;
+}
+.port .cajas {
+  animation: showBoxes 0.4s ease 1;
+}
+@keyframes showBoxes {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.skills {
+  height: auto;
+}
+.skills .header {
+  background-color: #fc0853;
+  position: relative;
+}
+.skills .header .num-svg {
+  background-image: url("../assets/skillsBlancoSvg.svg");
+}
+.skills .header h2 {
+  color: black;
+}
+.skills .content {
+  background: #252627;
+  padding-top: 3rem;
+  padding-left: 0.5rem;
+}
+.skills .content .lista_skills {
+  width: 90%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skills .content .code {
+  position: relative;
+}
+.skills .content .code::before {
+  content: "<ul>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  text-transform: lowercase;
+  position: absolute;
+  left: -0.2rem;
+  top: -1rem;
+}
+.skills .content .code-dos {
+  position: relative;
+}
+.skills .content .code-dos::before {
+  content: "</ul>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  text-transform: lowercase;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+}
+.skills .content .code-dos .nth8::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content .code-dos .nth9::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+.skills .content .code-dos .nth10::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content .code-dos .nth11::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #434444, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content .code-dos .nth12::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+.skills .content .code-dos .nth13::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content .code-dos .nth14::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li {
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  color: #19ccaa;
+  position: relative;
+}
+.skills .content li::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: #fc0853;
+  position: absolute;
+  left: 10%;
+  margin-left: 6rem;
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(1)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(2)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .content li:nth-child(3)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .content li:nth-child(4)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .software {
+  margin-top: 3rem;
+}
+.skills .software h4 {
+  width: 70%;
+  color: #fc0853;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+.skills .software h4::after {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background-color: #434444;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  background-color: #fc0853;
+}
+.skills .software h4::before {
+  content: "";
+  position: absolute;
+  left: 105%;
+  top: 2rem;
+  background-image: url("../assets/afterSvg.svg");
+  background-repeat: no-repeat;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.skills .software .software-list {
+  margin-top: 3.5rem;
+}
+.skills .software .software-list li:nth-child(1)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .software .software-list li:nth-child(2)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #434444, 100px 0 #434444;
+}
+.skills .software .software-list li:nth-child(3)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #fc0853;
+}
+.skills .software .software-list li:nth-child(4)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+.skills .software .software-list li:nth-child(5)::after {
+  box-shadow: 25px 0 #fc0853, 50px 0 #fc0853, 75px 0 #fc0853, 100px 0 #434444;
+}
+
+footer {
+  position: relative;
+  background-color: #252627;
+  padding: 3rem 0 0 0;
+}
+footer::before {
+  content: "</html>";
+  font-family: "Damion";
+  font-size: 0.8rem;
+  color: #5e5e5e;
+  position: absolute;
+  top: 9rem;
+  left: 0.5rem;
+}
+footer .git {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+footer .git a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+footer .git a:hover {
+  color: #13ba9a;
+}
+footer p {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  padding: 1rem 0 2rem 1rem;
+  font-weight: 200;
+  text-align: center;
+}
+footer p a {
+  color: white;
+}
+
+/*@function logosTamaño($width, $height){
+    $width: 8.5rem;
+    $height: 8.5rem;
+    $resultado: $width, $height;
+    @return $resultado
+}*/
+@media screen and (min-width: 302px) {
+  header .logo_externo {
+    width: 5rem;
+    height: 5rem;
+  }
+  header h1 {
+    font-size: 3.5rem;
+  }
+  header a {
+    font-size: 2.5rem;
+  }
+
+  .skills .content li {
+    font-size: 1rem;
+  }
+  .skills .content li::after {
+    margin-left: 7rem;
+  }
+  .skills .content .code-dos::after {
+    left: 6.5rem;
+  }
+}
+/* REVISAR */
+@media screen and (height: 360px) {
+  header nav {
+    height: 100vh;
+    padding-top: 0;
+    font-size: 1rem;
+  }
+  header .text_menu {
+    margin-top: 1rem;
+  }
+}
+/* ********* */
+@media screen and (min-width: 375px) {
+  header .logo_externo {
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  header a {
+    font-size: 3rem;
+  }
+
+  .header h2 {
+    font-size: 2.5rem;
+  }
+
+  .skills .content li {
+    font-size: 1.5rem;
+  }
+  .skills .content li::after {
+    margin-left: 8em;
+  }
+  .skills .content .code-dos::after {
+    left: 9.5rem;
+  }
+}
+@media screen and (min-width: 522px) {
+  header .logo_externo {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+  header h1 {
+    font-size: 5.8rem;
+  }
+}
+@media screen and (min-width: 671px) {
+  header .logo_externo {
+    width: 10.2rem;
+    height: 10.2rem;
+  }
+  header h1 {
+    font-size: 7rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  header .abrirMenu {
+    display: none;
+  }
+  header .menu-show {
+    display: block;
+    padding-top: 0;
+  }
+  header nav {
+    background: none;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header a {
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+  }
+  header a:hover {
+    color: #08fdd8;
+  }
+  header .text_menu {
+    display: none;
+  }
+
+  .port .container_port {
+    width: 99%;
+    left: 1%;
+  }
+  .port .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .port .flex-item {
+    flex: 49.5%;
+    max-width: 49.5%;
+  }
+
+  .skills .content {
+    padding-left: 15%;
+  }
+  .skills .content li {
+    font-size: 2rem;
+  }
+  .skills .content li::after {
+    top: 0.5rem;
+    left: 22%;
+  }
+}
+@media screen and (min-width: 832px) {
+  header .logo_externo {
+    width: 13.3rem;
+    height: 13.3rem;
+  }
+  header h1 {
+    font-size: 9rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header .logo_externo {
+    width: 17.8rem;
+    height: 17.8rem;
+  }
+  header h1 {
+    font-size: 12rem;
+  }
+  header a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    display: flex;
+  }
+
+  .header {
+    width: 20%;
+    height: auto;
+  }
+  .header .num-svg {
+    width: 12rem;
+    height: 12rem;
+  }
+  .header h2 {
+    transform: rotate(90deg);
+    width: 25rem;
+    left: -6rem;
+    font-size: 4.5rem;
+    top: 30rem;
+  }
+
+  .port h2 {
+    top: 30rem;
+  }
+
+  .skills h2 {
+    top: 26rem;
+  }
+  .skills .content {
+    padding-left: 2%;
+  }
+  .skills .content .lista_skills1 {
+    display: flex;
+  }
+  .skills .content .flex_uno {
+    flex: 1;
+  }
+  .skills .content .flex_dos {
+    flex: 1;
+  }
+  .skills .content li::after {
+    margin-left: 9.5rem;
+  }
+}
+@media screen and (min-width: 1480px) {
+  .skills .content {
+    padding-left: 5.5rem;
+  }
+  .skills .content li {
+    font-size: 3rem;
+  }
+  .skills .content li::after {
+    top: 1rem;
+    left: 22%;
+    margin-left: 16rem;
+  }
+  .skills .content .code-dos::after {
+    left: 18rem;
+  }
+}
+/* min: 523 */
+.btn-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+.btn-top button {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: none;
+  border: solid #fc0853;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 27%;
+  top: 35%;
+}
+
+.hide-scroll {
+  display: none;
+}
+
+/*# sourceMappingURL=css/styles.css.map */

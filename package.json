@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "parallelshell \"npm run server\" \"npm run watch\"",
-    "watch": "nodemon -e scss -x \"sass scss:css\"",
+    "watch": "nodemon -e scss -x \"sass ./src/scss:./dist/css\"",
     "server": "http-server",
-    "sass": "sass scss:css",
+    "sass": "sass ./src/scss:./dist/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

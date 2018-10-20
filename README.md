@@ -10,7 +10,7 @@ for watching.
 [-> My Portfolio](https://divthesign.github.io/MyPortfolio/)
 -
 
-![alt text](./assets/DivThesignLogo.svg)
+![alt text](./dist/assets/DivThesignLogo.svg)
 
 
 ## CODE :

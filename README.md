@@ -7,7 +7,7 @@
 welcome to my personal portfolio on GitHub, click the link below 
 for watching.
 
-<!-- [-> My Portfolio](https://divthesign.github.io/MyPortfolio/) -->
+[-> My Portfolio](https://divthesign.github.io/MyPortfolio/)
 -
 
 ![alt text](./dist/assets/DivThesignLogo.svg)

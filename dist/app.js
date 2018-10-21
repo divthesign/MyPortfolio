@@ -1,5 +1,9 @@
 class app {
     constructor() {
+        let divTheSign = 'DivThesign'
+        this.title = document.querySelector('title')
+        .innerHTML = `${divTheSign}web developer`
+
         console.log('hola bienvenido a mi portfolio')
         this.menuHam = document.querySelector('.change')
         this.btnAbrirMenu = document.querySelector('.abrirMenu')

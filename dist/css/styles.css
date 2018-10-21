@@ -605,14 +605,9 @@ main {
   text-align: center;
   margin-top: 1rem;
 }
-.content .datos-contacto p {
+.content .datos-contacto a {
   color: white;
   font-family: "Montserrat";
-  cursor: pointer;
-  padding: 0.5rem 0;
-  margin-top: 1.5rem;
-  position: relative;
-  z-index: 99999;
 }
 .content .datos-contacto .tlfn {
   color: #19ccaa;
@@ -1223,4 +1218,4 @@ footer p a {
   display: none;
 }
 
-/*# sourceMappingURL=css/styles.css.map */
+/*# sourceMappingURL=dist/css/styles.css.map */

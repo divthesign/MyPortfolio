@@ -23,6 +23,11 @@
   "homepage": "https://github.com/divthesign/MyPortfolio#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-minify": "^3.1.0"
+    "gulp-clean-css": "^3.10.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
   }
 }

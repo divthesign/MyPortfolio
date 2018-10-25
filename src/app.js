@@ -9,6 +9,7 @@ class app {
         this.btnAbrirMenu = document.querySelector('.abrirMenu')
         this.menuDesp = document.querySelector('.menu-hide')
 
+
         this.link = document.querySelector('.menu-hide ul li a')
         this.linkPort = document.querySelector('#link-port')
         this.linkSkills = document.querySelector('#link-skills')
